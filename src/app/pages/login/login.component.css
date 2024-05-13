@@ -1,3 +1,164 @@
-.inputWithLabel input:focus + label{
-    @apply hidden;
+.loginContainer {
+    column-gap: 65px;
+}
+
+.loginLeft {
+    width: 45%;
+    padding: 35px;
+    padding-right: 0;
+}
+
+.loginLogoImg {
+    width: 175px;
+}
+
+.loginText {
+    margin-top: 135px;
+}
+
+.loginTitle {
+    font-size: 28px;
+    text-transform: capitalize;
+}
+
+.loginDesc {
+    font-size: 15px;
+    text-transform: capitalize;
+    max-width: 400px;
+    margin-top: 16px;
+    color: var(--text-light);
+}
+
+.loginForm {
+    margin-top: 78px;
+    max-width: 450px;
+}
+
+.formItem {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.inputItem {
+    outline: none;
+    padding: 18px 19px;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    position: relative;
+}
+
+.inputItem:focus {
+    outline: none;
+    border: 1px solid var(--primary);
+}
+
+.inputItem::placeholder {
+    color: var(--text);
+    font-weight: 800;
+    opacity: 1;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.inputItem:focus::placeholder {
+    opacity: 0.5;
+}
+
+.labelItem {
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    transform: translateY(-50%);
+    color: var(--text-light);
+}
+
+.inputItem:focus + .labelItem {
+    display: none;
+}
+
+.submitBtn {
+    margin-top: 24px;
+    padding: 19px 18px;
+    background-color: var(--primary);
+    color: #fff;
+    font-family: 16px;
+}
+
+.forgotPass {
+    font-size: 24px;
+    color: var(--primary);
+    margin-top: 9px;
+}
+
+.loginRight {
+    width: calc(55% - 65px);
+    margin: 0;
+    padding: 35px;
+    padding-left: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.loginImg {
+    object-fit: cover;
+}
+
+.loginLogoMobile {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loginLogoImgMobile {
+    width: 175px;
+}
+
+@media (max-width: 991px) { 
+    .loginContainer {
+        padding-top: 100px;
+    }
+    .loginLeft {
+        width: 100%;
+        background-color: #fff;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        padding: 20px;
+        padding-top: 45px;
+        padding-bottom: 30px;
+        z-index: 1;
+        position: sticky;
+    }
+    
+    .loginRight {
+        width: 100%;
+        left: 0;
+        padding: 0;
+        z-index: 0;
+    }
+
+    .loginImg {
+        border-radius: 0!important;
+        object-position: bottom;
+    }
+
+    .loginText {
+        margin-top: 0;
+    }
+    
+    .loginTitle {
+        color: var(--primary);
+    }
+
+    .loginForm {
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .forgotPass {
+        font-size: 20px;
+    }
 }

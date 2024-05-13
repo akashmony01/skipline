@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 interface ImageObject {
   url: string;
@@ -22,9 +22,42 @@ export class LoginComponent {
     url: 'assets/images/logo.svg',
     alt: 'Logo Image'
   }
+  logo_img_white: ImageObject = {
+    url: 'assets/images/logo-white.svg',
+    alt: 'Logo Image'
+  }
   banner_img: ImageObject = {
     url: 'assets/images/login_img.png',
     alt: 'Login screen img'
   };
+
+  dynamic_img_height: number = 0;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    this.setHeight();
+  }
+
+  ngOnInit() {
+    this.setHeight();
+  }
+
+  setHeight() {
+    const totalHeight : number | undefined = document.getElementById('loginContainer')?.offsetHeight;
+    const contentHeight : number | undefined = document.getElementById('loginLeft')?.offsetHeight;
+
+    if(totalHeight && contentHeight) {
+      const imageHeight: number = totalHeight - contentHeight;
+
+      const screenWidth = window.innerWidth;
+      
+      if (screenWidth < 992) {
+        this.dynamic_img_height = imageHeight + 20;
+      } else {
+        this.dynamic_img_height = totalHeight - 70;
+      }
+
+    }
+  }
 
 }

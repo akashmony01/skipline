@@ -1,85 +1,79 @@
-<section class="relative p-6 lg:p-10 min-h-screen flex flex-col justify-center">
-    <article class="w-full w-6/12 lg:w-5/12">
-        <div class="text-center">
-            <a routerLink="" class="inline-block mx-uto">
-                <img
-                    class="w-44" 
-                    [src]="logo_img.url" 
-                    [alt]="logo_img.alt"
-                >
-            </a>
-            <div class="mt-16 md:mt-20 lg:mt-24">
-                <h1 class="text-2xl md:text-3xl font-black leading-tight md:leading-tight">
-                    {{ title }}
-                </h1>
-                <p class="mt-4 mx-auto max-w-sm text-textColor-light">
-                    {{ description }}
-                </p>
-            </div>
-        </div>
-        <form class="mt-14 md:mt-16 mx-auto max-w-lg space-y-3">
-            <div class="relative inputWithLabel">
-                <input 
-                    [(ngModel)]="email"
-                    id="email"
-                    class="bg-transparent w-full py-4 px-5 font-bold placeholder:text-[14px] placeholder:text-black focus:placeholder:opacity-20 border border-primary/5 focus:border-primary/20 rounded-lg outline-none focus:outline-none duration-300"
-                    name="email"
-                    type="email"
-                    placeholder="Username"
-                />
-                <label 
-                    *ngIf="!email"
-                    for="email" 
-                    class="tracking-wider text-[14px] text-textColor-light absolute top-2/4 right-5 transform -translate-y-2/4"
-                >
-                    Type Your Mail
-                </label>
-            </div>
-            <div class="relative inputWithLabel">
-                <input 
-                    [(ngModel)]="password"
-                    id="password"
-                    class="bg-transparent w-full py-4 px-5 font-bold placeholder:text-[14px] placeholder:text-black focus:placeholder:opacity-20 border border-primary/5 focus:border-primary/20 rounded-lg outline-none focus:outline-none duration-300"
-                    name="password"
-                    type="password"
-                    placeholder="Password"
-                />
-                <label 
-                    *ngIf="!password"
-                    for="password" 
-                    class="tracking-widest text-[14px] text-textColor-light absolute top-2/4 right-5 transform -translate-y-2/4"
-                >
-                    ***************
-                </label>
-            </div>
-            <div class="pt-2 flex flex-col sm:flex-row lg:flex-col xl:flex-row items-center gap-4">
-                <button type="submit" class="w-full sm:w-8/12 lg:w-full xl:w-8/12 py-4 px-5 rounded-lg bg-primary text-white font-bold">
-                    Sign Up
-                </button>
-                <div class="w-full sm:w-4/12 lg:w-full xl:w-4/12 flex items-center justify-center xl:justify-start gap-4">
-                    <a href="" class="block p-4 border border-primary/5 rounded-lg">
-                        <img
-                            class="w-8 h-8" 
-                            src="./assets/images/google_logo.svg" 
-                            alt="google logo"
-                        >
-                    </a>
-                    <a href="" class="block p-4 border border-primary/5 rounded-lg">
-                        <img
-                            class="w-8 h-8" 
-                            src="./assets/images/facebook_logo.svg" 
-                            alt="google logo"
-                        >
-                    </a>
+<section class="loginSection">
+    <div id="loginContainer" class="loginContainer position-relative d-flex flex-column-reverse flex-lg-row align-items-center min-vh-100">
+        <article id="loginLeft" class="loginLeft">
+            <div class="loginContent text-center">
+                <a routerLink="" class="d-none d-lg-inline-block">
+                    <img
+                        class="loginLogoImg img-fluid"
+                        [src]="logo_img.url" 
+                        [alt]="logo_img.alt"
+                    >
+                </a>
+                <div class="loginText">
+                    <h1 class="loginTitle fw-black">
+                        {{ title }}
+                    </h1>
+                    <p class="loginDesc mx-auto">
+                        {{ description }}
+                    </p>
                 </div>
             </div>
-        </form>
-    </article>
-    <figure class="hidden lg:block absolute top-0 lg:top-10 right-0 lg:right-10 bottom-0 lg:bottom-10 w-full w-6/12 lg:w-7/12 lg:pl-24">
-        <img
-            class="w-full h-full object-cover object-center lg:rounded-2xl" 
-            [src]="banner_img.url" 
-            [alt]="banner_img.alt"
-        >
-    </figure>
+            <form class="loginForm text-center mx-auto">
+                <div class="formItem">
+                    <input 
+                        [(ngModel)]="email"
+                        id="email"
+                        class="inputItem w-100 rounded-3"
+                        name="email"
+                        type="email"
+                        placeholder="Username"
+                    />
+                    <label *ngIf="!email" for="email" class="labelItem ltr-spacing-1">
+                        Type Your Mail
+                    </label>
+                </div>
+                <div class="formItem">
+                    <input 
+                        [(ngModel)]="password"
+                        id="password"
+                        class="inputItem w-100 rounded-3"
+                        name="password"
+                        type="password"
+                        placeholder="Password"
+                    />
+                    <label *ngIf="!password" for="password" class="labelItem ltr-spacing-3">
+                        ***************
+                    </label>
+                </div>
+                <button type="submit" class="submitBtn w-100 fw-bolder d-block border-0 rounded-3">
+                    Login
+                </button>
+                <a href="" class="forgotPass fw-bolder d-inline-block">
+                    Forgot Password
+                </a>
+            </form>
+        </article>
+        <figure class="loginRight">
+            <div [ngStyle]="{'height.px': dynamic_img_height}" class="position-relative">
+                <span class="d-inline-block d-lg-none position-absolute start-0 top-0 bottom-0 end-0 bg-black opacity-50"></span>
+                <a routerLink="" class="loginLogoMobile d-inline-block d-lg-none">
+                    <img
+                        class="loginLogoImgMobile img-fluid"
+                        [src]="logo_img_white.url" 
+                        [alt]="logo_img_white.alt"
+                    >
+                </a>
+                <img 
+                    class="loginImg rounded-4 w-100 h-100" 
+                    [src]="banner_img.url" 
+                    [alt]="banner_img.alt"
+                >
+            </div>
+        </figure>
+    </div>
 </section>
+
+
+
+
+
