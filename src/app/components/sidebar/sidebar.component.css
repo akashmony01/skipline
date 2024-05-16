@@ -1,0 +1,164 @@
+.sideBar {
+    background-color: white;
+    padding: 25px 30px;
+    border-right: 1px solid var(--border-dark);
+    gap: 0px;
+    overflow-y: auto;
+}
+
+/* ============sidebar top=================== */
+
+
+.sideBarLogo {
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border);
+}
+
+.sideBarLogoImg {
+    width: 100%;
+    height: auto;
+}
+
+.sideBarMenu{
+    display: flex;
+    column-gap: 20px;
+    padding: 20px 0;
+}
+
+.sideBarMenuItem{
+    width: 50%;
+    padding: 17px 20px;
+    background-color: var(--primary-light);
+    border-radius: 10px;
+}
+
+.sideBarMenuItem:hover,
+.sideBarMenuItem.active {
+    background-color: var(--primary);
+}
+
+.sideBarMenuIcon svg {
+    fill: var(--text);
+    transition: 0.2s;
+}
+
+.sideBarMenuItem:hover .sideBarMenuIcon svg,
+.sideBarMenuItem.active .sideBarMenuIcon svg{
+    fill: white;
+}
+
+.sideBarMenuLabel {
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 800;
+    color: var(--text);
+    letter-spacing: 0.5px;
+    transition: 0.2s;
+}
+
+.sideBarMenuItem:hover .sideBarMenuLabel,
+.sideBarMenuItem.active .sideBarMenuLabel{
+    color: white;
+}
+
+.homeItem {
+    position: relative;
+}
+
+.homeItem::after{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: var(--text);
+}
+
+.sideBarMenuItem:hover.homeItem::after,
+.sideBarMenuItem.active.homeItem::after {
+    background-color: white;
+}
+
+
+.sideBarNotif {
+    margin-top: 10px;
+}
+
+.sideNotifHeadingIcon {
+    position: relative;
+}
+
+.sideNotifHeadingDot {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+
+.sideBarNoftifList {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+}
+
+
+
+
+
+/* ===============sidebar bottom======================== */
+.sidebarLogOutBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50px;
+    min-width: 140px;
+}
+
+.sidebarProfileImg {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.sidebarProfile {
+    margin-top: 15px;
+}
+
+.sidebarProfileName {
+    margin-bottom: 0px;
+    color: var(--text-light);
+}
+
+.sidebarProfileBtn {
+    color: var(--primary);
+}
+
+.sidebarBottomMenu {
+    margin-top: 20px;
+    padding: 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--border);
+    list-style-type: none;
+}
+
+.sidebarBottomItem {
+    display: inline-block;
+    padding: 6px 9px;
+    background-color: var(--bg-3);
+    font-size: 12px;
+    color: var(--text);
+    font-weight: 600;
+    border-radius: 5px;
+    transform: 0.3s;
+}
+
+.sidebarBottomItem:hover {
+    background-color: var(--bg-2);
+}

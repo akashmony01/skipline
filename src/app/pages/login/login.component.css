@@ -89,6 +89,7 @@
     font-size: 24px;
     color: var(--primary);
     margin-top: 9px;
+    text-decoration: underline;
 }
 
 .loginRight {
@@ -108,7 +109,7 @@
 
 .loginLogoMobile {
     position: absolute;
-    top: calc(50% - 20px);
+    top: calc(50% - 10px);
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -119,7 +120,7 @@
 
 @media (max-width: 991px) { 
     .loginContainer {
-        padding-top: 100px;
+        padding-top: 150px;
     }
     .loginLeft {
         width: 100%;

@@ -1,0 +1,45 @@
+.sideBarNotifItem {
+    background-color: var(--bg-2);
+    padding: 16px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid transparent;
+}
+
+.sideBarNotifItem.active {
+    border-color: var(--border-dark);
+}
+
+.sideBarNotifItem:hover {
+    background-color: var(--bg-3);
+}
+
+.sideBarNotifTitle {
+    margin: 0;
+}
+
+.sideBarNotifAction {
+    transition: 0.3s;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.sideBarNotifItem.active .sideBarNotifAction {
+    margin-top: 10px;
+    max-height: 100vh;
+    overflow-y: auto;
+}
+
+
+.sideBarNotifIgnore {
+    color: var(--text-light);
+}
+
+.sideBarNotifIgnore:hover {
+    color: var(--primary-dark);
+}
+
+.sideBarNotifCheck {
+    color: var(--primary);
+}

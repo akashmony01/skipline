@@ -93,11 +93,15 @@
 :root {
   --primary: #5A36CD;
   --primary-dark: #1C0F46;
+  --primary-light: #F4F0FF;
   --text: #000000;
   --text-light: #838383;
-  --bg: #FBF9FF;
+  --bg-1: #FBF9FF;
+  --bg-2: #F8F8F8;
+  --bg-3: #F4F0FF;
   --bg-dark: #1C0F46;
   --border: #F2F2F2;
+  --border-dark: #DADBE0;
 }
 
 
@@ -113,6 +117,7 @@ button,
 a {
   transition: 0.3s;
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -124,6 +129,16 @@ a {
 button:hover,
 a:hover {
   opacity: 0.8;
+}
+
+.hideScrollbar {
+  overflow: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
 }
 
 

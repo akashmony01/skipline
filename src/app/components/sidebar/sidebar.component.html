@@ -1,0 +1,122 @@
+<div class="sideBar hideScrollbar w-100 h-100 d-flex flex-column justify-content-between shadow-sm">
+    <div class="sideBarTop w-100">
+        <a routerLink="" class="sideBarLogo d-block">
+            <img
+                class="sideBarLogoImg img-fluid"
+                [src]="logo_img.url" 
+                [alt]="logo_img.alt"
+            >
+        </a>
+        <div class="sideBarMenu text-center">
+            <a routerLink="/" class="homeItem sideBarMenuItem active">
+                <span class="sideBarMenuIcon d-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 30 30">
+                        <path d="M17.245 5.16996C16.017 3.90168 13.9829 3.90168 12.7549 5.16995L6.75682 11.3646C6.41234 11.7204 6.18086 12.1701 6.09154 12.6572C5.36309 16.6297 5.30932 20.6965 5.93249 24.6869L6.15311 26.0996C6.2228 26.5458 6.60713 26.8748 7.05876 26.8748H11.25C11.5951 26.8748 11.875 26.595 11.875 26.2498V17.4998H18.125V26.2498C18.125 26.595 18.4048 26.8748 18.75 26.8748H22.9411C23.3927 26.8748 23.7771 26.5458 23.8468 26.0996L24.0674 24.6869C24.6905 20.6965 24.6368 16.6297 23.9083 12.6572C23.819 12.1701 23.5875 11.7204 23.2431 11.3646L17.245 5.16996Z"/>
+                    </svg> 
+                </span>
+                <span class="sideBarMenuLabel d-block text-break">
+                    Dashboard
+                </span> 
+            </a>
+            <a routerLink="" class="settingsItem sideBarMenuItem">
+                <span class="sideBarMenuIcon d-block">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 30 30">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.9984 3.23416C14.6213 2.88809 15.3787 2.88809 16.0016 3.23416L25.0016 8.23416C25.6564 8.59792 26.0625 9.28808 26.0625 10.0371V19.9632C26.0625 20.7122 25.6564 21.4024 25.0016 21.7662L16.0016 26.7662C15.3787 27.1122 14.6213 27.1122 13.9984 26.7662L4.99836 21.7662C4.34359 21.4024 3.9375 20.7122 3.9375 19.9632V10.0371C3.9375 9.28808 4.34359 8.59792 4.99836 8.23416L13.9984 3.23416ZM15.091 4.87321C15.0344 4.84174 14.9656 4.84174 14.9089 4.8732L5.90894 9.87321C5.84942 9.90627 5.8125 9.96902 5.8125 10.0371V19.9632C5.8125 20.0313 5.84942 20.094 5.90894 20.1271L14.9089 25.1271C14.9656 25.1586 15.0344 25.1586 15.0911 25.1271L24.0911 20.1271C24.1506 20.094 24.1875 20.0313 24.1875 19.9632V10.0371C24.1875 9.96902 24.1506 9.90627 24.0911 9.87321L15.0911 4.87321Z"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0625 15.0002C9.0625 11.721 11.7208 9.06266 15 9.06266C18.2792 9.06266 20.9375 11.721 20.9375 15.0002C20.9375 18.2793 18.2792 20.9377 15 20.9377C11.7208 20.9377 9.0625 18.2793 9.0625 15.0002ZM15 10.9377C12.7563 10.9377 10.9375 12.7565 10.9375 15.0002C10.9375 17.2438 12.7563 19.0627 15 19.0627C17.2437 19.0627 19.0625 17.2438 19.0625 15.0002C19.0625 12.7565 17.2437 10.9377 15 10.9377Z"/>
+                    </svg>
+                </span>
+                <span class="sideBarMenuLabel d-block text-break">
+                    Setting
+                </span>      
+            </a>
+        </div>
+
+        <div class="sideBarNotif">
+            <div class="sideBarNotifHeading d-flex align-items-center justify-content-between">
+                <p class="sideNotifHeadingText mb-0 fw-bolder">
+                    4 Notification
+                </p>
+                <div class="sideNotifHeadingIcon d-block">
+                    <span class="sideNotifHeadingDot"></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 21" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.625 3.375C14.625 2.75368 14.1213 2.25 13.5 2.25C12.8786 2.25 12.375 2.75368 12.375 3.375V4.21875H11.7479C9.24466 4.21875 7.17286 6.16501 7.0166 8.66334L6.76798 12.6385C6.67318 14.1541 6.16436 15.6146 5.29692 16.861C4.51315 17.9872 5.2109 19.5426 6.57319 19.7061L10.4062 20.1661V21.375C10.4062 23.0836 11.7913 24.4688 13.5 24.4688C15.2086 24.4688 16.5937 23.0836 16.5937 21.375V20.1661L20.4267 19.7061C21.789 19.5426 22.4868 17.9872 21.703 16.861C20.8356 15.6146 20.3267 14.1541 20.2319 12.6385L19.9833 8.66334C19.827 6.16501 17.7552 4.21875 15.252 4.21875H14.625V3.375ZM11.7479 5.90625C10.1357 5.90625 8.80145 7.15969 8.70081 8.76868L8.45219 12.7438C8.33812 14.5676 7.72583 16.3251 6.682 17.825C6.62535 17.9064 6.67578 18.0188 6.77425 18.0306L10.9791 18.5352C12.6537 18.7361 14.3462 18.7361 16.0208 18.5352L20.2257 18.0306C20.3241 18.0188 20.3746 17.9064 20.3179 17.825C19.2741 16.3251 18.6618 14.5676 18.5477 12.7438L18.2991 8.76868C18.1985 7.15969 16.8642 5.90625 15.252 5.90625H11.7479ZM13.5 22.7812C12.7233 22.7812 12.0937 22.1516 12.0937 21.375V20.5312H14.9062V21.375C14.9062 22.1516 14.2766 22.7812 13.5 22.7812Z" fill="black"/>
+                    </svg>
+                </div>
+            </div>
+            <ul class="sideBarNoftifList d-flex flex-column">
+                <app-notif-item title="dfg hyjk fghjk g"></app-notif-item>
+                <app-notif-item title="dfg dsrg aes fghjk g"></app-notif-item>
+                <app-notif-item title="dfg ds g"></app-notif-item>
+                <app-notif-item title="ds sdb sdf g"></app-notif-item>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sideBarBottom w-100">
+        <div class="sidebarLogout text-center">
+            <a href="" class="sidebarLogOutBtn fw-bold d-inline-block">
+                Logout
+            </a>
+        </div>
+        <div class="sidebarProfile d-flex align-items-center gap-3">
+            <img 
+                class="sidebarProfileImg img-fluid"
+                [src]="care_img.url" 
+                [alt]="care_img.alt"
+            />
+            <div class="sidebarProfileText">
+                <p class="sidebarProfileName">
+                    Medical Care Hospital
+                </p>
+                <a href="" class="sidebarProfileBtn d-flex fw-bold gap-1 align-items-center">
+                    <span class="d-block">
+                        See Profile
+                    </span>
+                    <span class="d-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="10" viewBox="0 0 5 8" fill="none">
+                            <path d="M1 1L4 4L1 7" stroke="#5A36CD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <ul class="sidebarBottomMenu d-flex flex gap-2">
+            <li>
+                <a href="" class="sidebarBottomItem">
+                    Read Privacy
+                </a>
+            </li>
+            <li>
+                <a href="" class="sidebarBottomItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M17.5 10H15C14.6685 10 14.3505 10.1317 14.1161 10.3661C13.8817 10.6005 13.75 10.9185 13.75 11.25V14.375C13.75 14.7065 13.8817 15.0245 14.1161 15.2589C14.3505 15.4933 14.6685 15.625 15 15.625H16.25C16.5815 15.625 16.8995 15.4933 17.1339 15.2589C17.3683 15.0245 17.5 14.7065 17.5 14.375V10ZM17.5 10C17.5 9.01509 17.306 8.03982 16.9291 7.12987C16.5522 6.21993 15.9997 5.39314 15.3033 4.6967C14.6069 4.00026 13.7801 3.44781 12.8701 3.0709C11.9602 2.69399 10.9849 2.5 10 2.5C9.01509 2.5 8.03982 2.69399 7.12987 3.0709C6.21993 3.44781 5.39314 4.00026 4.6967 4.6967C4.00026 5.39314 3.44781 6.21993 3.0709 7.12987C2.69399 8.03982 2.5 9.01509 2.5 10M2.5 10V14.375C2.5 14.7065 2.6317 15.0245 2.86612 15.2589C3.10054 15.4933 3.41848 15.625 3.75 15.625H5C5.33152 15.625 5.64946 15.4933 5.88388 15.2589C6.1183 15.0245 6.25 14.7065 6.25 14.375V11.25C6.25 10.9185 6.1183 10.6005 5.88388 10.3661C5.64946 10.1317 5.33152 10 5 10H2.5Z" stroke="black" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="sidebarBottomItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M11 3.4375V2.75" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 15.8125C13.6579 15.8125 15.8125 13.6579 15.8125 11C15.8125 8.34213 13.6579 6.1875 11 6.1875C8.34213 6.1875 6.1875 8.34213 6.1875 11C6.1875 13.6579 8.34213 15.8125 11 15.8125Z" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.5 5.5L4.8125 4.8125" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.5 16.5L4.8125 17.1875" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 5.5L17.1875 4.8125" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 16.5L17.1875 17.1875" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M3.4375 11H2.75" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M11 18.5625V19.25" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.5625 11H19.25" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="" class="sidebarBottomItem">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none">
+                        <path d="M11 19.25C15.5563 19.25 19.25 15.5563 19.25 11C19.25 6.44365 15.5563 2.75 11 2.75C6.44365 2.75 2.75 6.44365 2.75 11C2.75 15.5563 6.44365 19.25 11 19.25Z" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.3125 10.3125C10.4948 10.3125 10.6697 10.3849 10.7986 10.5139C10.9276 10.6428 11 10.8177 11 11V14.4375C11 14.6198 11.0724 14.7947 11.2014 14.9236C11.3303 15.0526 11.5052 15.125 11.6875 15.125" stroke="black" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.6562 8.25C11.2258 8.25 11.6875 7.78829 11.6875 7.21875C11.6875 6.64921 11.2258 6.1875 10.6562 6.1875C10.0867 6.1875 9.625 6.64921 9.625 7.21875C9.625 7.78829 10.0867 8.25 10.6562 8.25Z" fill="black"/>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
