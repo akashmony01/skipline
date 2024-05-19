@@ -13,10 +13,10 @@ export class NotifItemComponent {
     this.title = '';
   }
 
-  is_show_option: boolean = false;
+  isShowOption: boolean = false;
 
   toggleOption() {
-    this.is_show_option = !this.is_show_option;
+    this.isShowOption = !this.isShowOption;
   }
 
 }

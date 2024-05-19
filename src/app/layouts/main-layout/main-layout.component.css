@@ -1,10 +1,19 @@
 
 .mainContentParent {
     transition: 0.3s;
+    min-height: 100vh;
+    background-color: var(--bg-3);
 }
 
 .sidebarParent {
     transition: 0.3s;
+    z-index: 99999;
+}
+
+.mobileOverlay {
+    background-color: var(--primary);
+    opacity: 0.20;
+    z-index: 99998;
 }
 
 .sidebarParent.hidden {
@@ -39,10 +48,4 @@
 
 .sideBarToggler.active svg {
     stroke: white;
-}
-
-.mobileOverlay {
-    background-color: var(--primary);
-    opacity: 0.20;
-    z-index: 0;
 }

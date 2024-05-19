@@ -1,0 +1,64 @@
+<section class="doctorViewSec">
+    <app-dashboard-header-default></app-dashboard-header-default>
+
+    <div class="doctorsViewContent">
+        <div class="doctorsViewContentInner">
+            <h1 class="doctorsViewTitle fw-black">
+                Doctor's View
+            </h1>
+            <div class="doctorsViewHeader d-flex align-items-center justify-content-between flex-wrap gap-2">
+                <p class="doctorsViewDesc">
+                    Hospital Receptionist
+                </p>
+                <form 
+                    #myForm="ngForm"
+                    (ngSubmit)="onSubmit(myForm)"
+                    class="doctorsViewSearch d-flex justify-content-center align-items-center gap-2"
+                >
+                    <input 
+                        id="searchInput"
+                        class="doctorsViewSearchInput"
+                        placeholder="Search Patients or ...."
+                        type="text"
+                        name="search"
+                        [(ngModel)]="searchKey"
+                    />
+                    <button type="submit" class="doctorsViewSearchBtn btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" stroke="currentColor" fill="none">
+                            <path d="M9.625 16.5C13.422 16.5 16.5 13.422 16.5 9.625C16.5 5.82804 13.422 2.75 9.625 2.75C5.82804 2.75 2.75 5.82804 2.75 9.625C2.75 13.422 5.82804 16.5 9.625 16.5Z" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.4866 14.4863L16.5001 16.4998" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+                <select class="doctorViewSelect form-select">
+                    <option selected>Select Date 2023.11.12</option>
+                    <option value="1">2023.11.12</option>
+                    <option value="2">2023.11.12</option>
+                    <option value="3">2023.11.12</option>
+                </select>
+            </div>
+
+            <div class="activePatient">
+                <h2 class="activePatientTitle fw-medium">
+                    Active Patients
+                </h2>
+                <div class="activePatientList">
+                    <app-patient-item></app-patient-item>
+                    <app-patient-item></app-patient-item>
+                    <app-patient-item></app-patient-item>
+                </div>
+            </div>
+
+            <div class="completedPatient">
+                <h2 class="completedPatientTitle fw-medium">
+                    Completed
+                </h2>
+                <div class="completedPatientList">
+                    <app-patient-item></app-patient-item>
+                    <app-patient-item></app-patient-item>
+                    <app-patient-item></app-patient-item>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

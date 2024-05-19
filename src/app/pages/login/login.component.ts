@@ -15,20 +15,20 @@ export class LoginComponent {
   title: string = 'Welcome Back Skipline!'
   description: string = 'Skipline the best platform for manage your hospital & patient in any hospital'
   
-  logo_img: ImageObject = {
+  logoImg: ImageObject = {
     url: 'assets/images/logo.svg',
     alt: 'Logo Image'
   }
-  logo_img_white: ImageObject = {
+  logoImg_white: ImageObject = {
     url: 'assets/images/logo-white.svg',
     alt: 'Logo Image'
   }
-  banner_img: ImageObject = {
+  bannerImg: ImageObject = {
     url: 'assets/images/login_img.png',
     alt: 'Login screen img'
   };
 
-  dynamic_img_height: number = 0;
+  dynamicImgHeight: number = 0;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event) {
@@ -49,9 +49,9 @@ export class LoginComponent {
       const screenWidth = window.innerWidth;
       
       if (screenWidth < 992) {
-        this.dynamic_img_height = imageHeight + 20;
+        this.dynamicImgHeight = imageHeight + 20;
       } else {
-        this.dynamic_img_height = totalHeight - 70;
+        this.dynamicImgHeight = totalHeight - 70;
       }
 
     }

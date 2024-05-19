@@ -1,0 +1,148 @@
+<div 
+    class="dashboardTop" 
+    [ngStyle]="{'background-image': 'url(' + headerBgImg.url + ')'}"
+>
+    <div class="dshboardHeader d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <p class="headerHeading d-flex justify-content-center align-items-center">
+            <span class="inactiveHeading">
+                Dashboard/
+            </span>
+            <span class="activeHeading fw-bold">
+                Overview
+            </span>
+        </p>
+        <form 
+            #myForm="ngForm"
+            (ngSubmit)="onSubmit(myForm)"
+            class="headerSearch d-flex justify-content-center align-items-center gap-2"
+        >
+            <input 
+                id="searchInput"
+                class="headerSearchInput"
+                placeholder="Search Patients or ...."
+                type="text"
+                name="search"
+                [(ngModel)]="searchKey"
+            />
+            <button type="submit" class="headerSearchBtn btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" stroke="white" fill="none">
+                    <path d="M9.625 16.5C13.422 16.5 16.5 13.422 16.5 9.625C16.5 5.82804 13.422 2.75 9.625 2.75C5.82804 2.75 2.75 5.82804 2.75 9.625C2.75 13.422 5.82804 16.5 9.625 16.5Z" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M14.4866 14.4863L16.5001 16.4998" stroke="white" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+        </form>
+        <a routerLink="/" class="headerBtn d-inline-block fw-bolder">
+            Add Appointment
+        </a>
+    </div>
+    <div class="dashboardHeaderContent d-flex justify-content-center align-items-streatch">
+        <div class="dashboardReadmission boxParent">
+            <div class="readmissionChart h-100 w-100 fw-bold d-flex align-items-center justify-content-center">
+                Chart
+            </div>
+            <div class="readmissionText boxBottom">
+                <p class="readmissiionTitle">
+                    Readmission Rates
+                </p>
+                <div class="readmissionStar d-flex justify-content center gap-1">
+                    <span class="readmissionStarIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="black">
+                            <path d="M7.34756 1.04918C7.09646 0.616422 6.47151 0.61642 6.2204 1.04918L4.45195 4.09686C4.32791 4.31064 4.1135 4.45652 3.86911 4.49343L0.554926 4.994C-0.00171511 5.07807 -0.19697 5.78089 0.236536 6.14004L2.70547 8.18553C2.93401 8.37487 3.04147 8.67353 2.98595 8.96508L2.34012 12.3567C2.23802 12.8928 2.80086 13.3094 3.28378 13.0551L6.40451 11.4119C6.64203 11.2869 6.92593 11.2869 7.16346 11.4119L10.2842 13.0551C10.7671 13.3094 11.3299 12.8928 11.2278 12.3567L10.582 8.96508C10.5265 8.67353 10.634 8.37487 10.8625 8.18553L13.3314 6.14004C13.7649 5.78089 13.5697 5.07808 13.013 4.994L9.69885 4.49343C9.45446 4.45652 9.24006 4.31064 9.11601 4.09686L7.34756 1.04918Z"/>
+                        </svg>
+                    </span>
+                    <span class="readmissionStarRating fw-bold">
+                        4.6
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="dashboardPatient boxParent">
+            <div class="patientContent">
+                <p class="patientNumber fw-black">
+                    41,233
+                </p>
+                <p class="patientDesc">
+                    Recently updated
+                </p>
+            </div>
+            <div class="patientText boxBottom">
+                <span class="readmissionStarIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="black">
+                        <path d="M11.9422 14.4683C11.998 14.5539 12.0296 14.6529 12.0338 14.755C12.038 14.857 12.0145 14.9583 11.9658 15.0481C11.9172 15.138 11.8452 15.213 11.7574 15.2653C11.6697 15.3175 11.5694 15.3451 11.4673 15.3451H1.00902C0.906873 15.3451 0.806626 15.3175 0.71887 15.2653C0.631115 15.213 0.559109 15.138 0.51046 15.0481C0.461811 14.9583 0.438327 14.857 0.442487 14.755C0.446648 14.6529 0.478299 14.5539 0.534097 14.4683C1.33233 13.2396 2.50644 12.302 3.88125 11.7953C3.12122 11.2893 2.54421 10.5522 2.23553 9.69288C1.92685 8.8336 1.90289 7.89779 2.16719 7.02384C2.4315 6.14989 2.97003 5.3842 3.70317 4.83999C4.4363 4.29578 5.3251 4.00195 6.23814 4.00195C7.15119 4.00195 8.03999 4.29578 8.77312 4.83999C9.50626 5.3842 10.0448 6.14989 10.3091 7.02384C10.5734 7.89779 10.5494 8.8336 10.2408 9.69288C9.93208 10.5522 9.35506 11.2893 8.59504 11.7953C9.96985 12.302 11.144 13.2396 11.9422 14.4683ZM18.1736 14.4577C17.3752 13.2342 16.2037 12.3005 14.8328 11.7953C15.7301 11.1909 16.3633 10.2673 16.6036 9.21249C16.8439 8.1577 16.6732 7.05098 16.1262 6.1176C15.5793 5.18423 14.6972 4.49437 13.6595 4.18842C12.6219 3.88248 11.5066 3.98346 10.5408 4.47081C10.5039 4.48987 10.4716 4.51683 10.4462 4.54976C10.4209 4.5827 10.4031 4.6208 10.3941 4.66138C10.3851 4.70196 10.3851 4.74402 10.3942 4.78458C10.4032 4.82515 10.4211 4.86322 10.4465 4.89611C11.1647 5.79195 11.5772 6.89422 11.6235 8.04146C11.6698 9.1887 11.3475 10.3206 10.7038 11.2714C10.6622 11.3336 10.6469 11.4096 10.6611 11.483C10.6753 11.5565 10.7179 11.6213 10.7797 11.6634C11.6189 12.2491 12.3373 12.9911 12.8956 13.8488C13.1207 14.1936 13.2127 14.6086 13.1543 15.0162C13.1477 15.0568 13.1501 15.0983 13.1611 15.1379C13.1721 15.1774 13.1917 15.2141 13.2183 15.2454C13.2449 15.2767 13.278 15.3018 13.3153 15.319C13.3526 15.3362 13.3932 15.3452 13.4343 15.3451H17.7086C17.8335 15.3452 17.9549 15.304 18.0539 15.228C18.153 15.152 18.2242 15.0454 18.2566 14.9248C18.2763 14.8455 18.2791 14.7629 18.2648 14.6824C18.2505 14.6019 18.2194 14.5254 18.1736 14.4577Z"/>
+                    </svg>
+                </span>
+                <p class="patientTitle fw-bold">
+                    Patients
+                </p>
+            </div>
+        </div>
+        <div class="dashboardActivity boxParent">
+            <div class="activityChart d-flex justify-content-between gap-3">
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 75%; background-color: red;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        S
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 56%; background-color: blue;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        M
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 25%; background-color: gold;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        T
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 35%; background-color: indigo;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        W
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 55%; background-color: skyblue;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        T
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 85%; background-color: black;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        F
+                    </p>
+                </div>
+                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
+                    <div class="dayBar position-relative">
+                        <span class="dayBarFilled position-absolute" style="height: 45%; background-color: green;"></span>
+                    </div>
+                    <p class="dayIntial">
+                        S
+                    </p>
+                </div>
+            </div>
+            <div class="activityText boxBottom">
+                <p class="activityTitle">
+                    Activity Hospital
+                </p>
+                <p class="todaysDay fw-bold">
+                    Tuesday
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

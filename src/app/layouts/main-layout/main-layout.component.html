@@ -1,22 +1,22 @@
 <div class="position-relative">
     <!-- overlay for sidebar open on mobile -->
     <span 
-        *ngIf="show_sidebar" 
+        *ngIf="showSidebar" 
         (click)="toggleSidebar()"
         class="mobileOverlay d-block d-md-none position-fixed top-0 start-0 bottom-0 end-0"
     ></span>
 
     <div
-        [ngStyle]="{'width.px': sidebar_width}"
-        class="sidebarParent position-absolute top-0 satrt-0 bottom-0 bg-primary vh-100"
-        [ngClass]="{ 'hidden': !show_sidebar }"
+        [ngStyle]="{'width.px': sidebarWidth}"
+        class="sidebarParent position-fixed top-0 satrt-0 bottom-0 bg-primary vh-100"
+        [ngClass]="{ 'hidden': !showSidebar }"
     >
         <app-sidebar></app-sidebar>
         <button 
             (click)="toggleSidebar()"
-            [ngStyle]="show_sidebar ? {'left.px': sidebar_width} : {'left.px': sidebar_width+30}"
+            [ngStyle]="showSidebar ? {'left.px': sidebarWidth} : {'left.px': sidebarWidth+30}"
             class="sideBarToggler shadow-sm"
-            [ngClass]="{ 'active': !show_sidebar }"
+            [ngClass]="{ 'active': !showSidebar }"
         >
             <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
                 <path d="M18.8571 22.8978L12.1224 16.8366L18.8571 10.7754" stroke-width="2.02041" stroke-linecap="round" stroke-linejoin="round"/>
@@ -25,7 +25,7 @@
     </div>
     
     <div 
-        [ngStyle]="show_sidebar ? {'paddingLeft.px': setPaddingBasedOnWindow(sidebar_width)} : {}"
+        [ngStyle]="showSidebar ? {'paddingLeft.px': setPaddingBasedOnWindow(sidebarWidth)} : {}"
         class="mainContentParent"
     >
         <router-outlet></router-outlet>

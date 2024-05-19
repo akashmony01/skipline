@@ -1,0 +1,13 @@
+.defaultHeader {
+    padding: 40px;
+    padding-bottom: 80px;
+    background-color: var(--bg-dark);
+    color: white;
+    background-position: top center;
+    background-size: cover;
+    margin-bottom: -40px;
+}
+
+.inactiveHeading {
+    color: var(--text-light);
+}

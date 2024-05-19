@@ -1,0 +1,55 @@
+.patientItem {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.patientName {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.patientGenderDob {
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.patientGender {
+    padding: 0px 6px 5px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: white;
+}
+
+.patientDob {
+    background-color: var(--primary-light);
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+.patientInfo {
+    margin-top: 16px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.patientInfoItemData {
+    color: var(--primary);
+}
+
+.patientAction {
+    margin-top: 25px;
+    text-align: right;
+}
+
+.patientCompleteBtn {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: var(--text);
+    font-weight: 500;
+}

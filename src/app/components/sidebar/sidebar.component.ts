@@ -7,11 +7,11 @@ import { ImageObject } from 'src/app/models/app.models';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  logo_img: ImageObject = {
+  logoImg: ImageObject = {
     url: 'assets/images/logo.svg',
     alt: 'Logo Image'
   }
-  care_img: ImageObject = {
+  careImg: ImageObject = {
     url: 'assets/images/care.svg',
     alt: 'Care Image'
   }

@@ -102,6 +102,8 @@
   --bg-dark: #1C0F46;
   --border: #F2F2F2;
   --border-dark: #DADBE0;
+  --secondary: #B5FF9B;
+  --secondary-light: #E5FFDC;
 }
 
 
@@ -131,6 +133,10 @@ a:hover {
   opacity: 0.8;
 }
 
+p,h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+}
+
 .hideScrollbar {
   overflow: auto;
   -ms-overflow-style: none;
@@ -156,4 +162,12 @@ a:hover {
 
 .ltr-spacing-3{
   letter-spacing: 3px;
+}
+
+
+.resetUl,
+.resetOl {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }

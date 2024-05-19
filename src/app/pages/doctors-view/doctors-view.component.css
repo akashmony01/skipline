@@ -1,0 +1,110 @@
+.doctorsViewContent {
+    padding: 40px;
+    padding-top: 0;
+}
+
+.doctorsViewHeader {
+    margin-top: 8px;
+}
+
+.doctorsViewTitle {
+    font-size: 24px;
+}
+
+.doctorsViewDesc {
+    color: var(--text-light);
+}
+
+.doctorsViewContentInner {
+    padding: 33px;
+    border-radius: 12px;
+    background-color: white;
+}
+
+
+.doctorsViewSearchInput {
+    background-color: transparent;
+    padding: 3px 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    width: 160px;
+    transition: 0.3s;
+    color: var(--text);
+}
+
+.doctorsViewSearchInput:focus{
+    outline: none;
+    border-bottom: 1px solid var(--text);
+}
+
+.doctorsViewSearchInput::placeholder {
+    color: var(--text);
+}
+
+.doctorsViewSearchBtn {
+    background-color: transparent;
+    border: none;
+}
+
+.doctorViewSelect {
+    width: auto;
+    box-shadow: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    padding-right: 35px;
+    background-color: var(--bg-2);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.doctorViewSelect:hover{
+    opacity: 0.8;
+}
+
+.doctorViewSelect:focus {
+    box-shadow: none;
+    border: none;
+}
+
+
+
+
+.activePatient {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: var(--bg-2);
+    border-radius: 12px;
+}
+
+.activePatientTitle {
+    font-size: 16px;
+}
+
+.activePatientList {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+.completedPatient {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: var(--bg-2);
+    border-radius: 12px;
+}
+
+.completedPatientTitle {
+    font-size: 16px;
+}
+
+.completedPatientList {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}

@@ -6,11 +6,11 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./main-layout.component.css']
 })
 export class MainLayoutComponent {
-  sidebar_width: number = 300;
-  show_sidebar: boolean = true;
+  sidebarWidth: number = 300;
+  showSidebar: boolean = true;
 
   toggleSidebar() {
-    this.show_sidebar = !this.show_sidebar;
+    this.showSidebar = !this.showSidebar;
   }
 
   constructor() {
@@ -27,7 +27,7 @@ export class MainLayoutComponent {
   }
 
   hideSidebarOnMobile() {
-    this.show_sidebar = window.innerWidth > 768;
+    this.showSidebar = window.innerWidth > 768;
   }
 
   setPaddingBasedOnWindow(padding: number){
