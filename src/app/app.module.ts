@@ -14,6 +14,9 @@ import { DashboardHeaderComponent } from './components/dashboard-header/dashboar
 import { DoctorsViewComponent } from './pages/doctors-view/doctors-view.component';
 import { DashboardHeaderDefaultComponent } from './components/dashboard-header-default/dashboard-header-default.component';
 import { PatientItemComponent } from './components/patient-item/patient-item.component';
+import { NewPatientComponent } from './pages/new-patient/new-patient.component';
+import { InputItemComponent } from './components/input-item/input-item.component';
+import { InputItemSearchComponent } from './components/input-item-search/input-item-search.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { PatientItemComponent } from './components/patient-item/patient-item.com
     DashboardHeaderComponent,
     DoctorsViewComponent,
     DashboardHeaderDefaultComponent,
-    PatientItemComponent
+    PatientItemComponent,
+    NewPatientComponent,
+    InputItemComponent,
+    InputItemSearchComponent
   ],
   imports: [
     BrowserModule,

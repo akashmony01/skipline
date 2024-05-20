@@ -1,0 +1,138 @@
+<section class="newPatientSec">
+    <app-dashboard-header-default pageTitle="New Patient" />
+
+    <div class="newPatientContent">
+        <form class="newPatientContentInner">
+            <h1 class="newPatientTitle fw-black">
+                Doctor's View
+            </h1>
+            <p class="newPatientDesc">
+                Hospital Receptionist
+            </p>
+
+            <div class="basicInfo">
+                <p class="basicInfoTitle fw-black">
+                    Basic Information
+                </p>
+                <div class="basicInfoFields">
+                    <app-input-item 
+                        label="First Name"
+                        placeholder="Ed412532"
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                    />
+                    <app-input-item 
+                        label="Last Name"
+                        placeholder="Nikhil Mukherjee Rani Priya"
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                    />
+                    <app-input-item 
+                        label="Date of Birth"
+                        placeholder="2023.12.31"
+                        type="date"
+                        name="dob"
+                        id="dob"
+                    />
+                    <app-input-item
+                        label="Phone"
+                        placeholder="Phone Number"
+                        type="text"
+                        name="phone"
+                        id="phone"
+                    />
+                    <app-input-item
+                        label="Email"
+                        placeholder="Enter Email Address"
+                        type="email"
+                        name="email"
+                        id="email"
+                    />
+                    <app-input-item
+                        label="Identifier Number"
+                        placeholder="41243253125412"
+                        type="text"
+                        name="id"
+                        id="id"
+                    />
+                    <app-input-item
+                        label="Gender"
+                        placeholder="Select"
+                        type="select"
+                        name="gender"
+                        id="gender"
+                    />
+                    <div class="colspan2">
+                        <app-input-item
+                            label="Addres"
+                            placeholder=" 456 Park Avenue, Apt 201, 123 Main Street, Anytown, 12345"
+                            type="text"
+                            name="address"
+                            id="address"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="patientInfo">
+                <p class="patientInfoTitle fw-black">
+                    Patient Information
+                </p>
+                <div class="patientInfoFields d-flex flex-column">
+                    <app-input-item-search 
+                        label="Select Existing health conditions"
+                        placeholder="Search health conditions ..."
+                        name="existingCondition"
+                        id="existingCondition"
+                    />
+                    <app-input-item-search 
+                        label="Select Patients Vaccines"
+                        placeholder="Search vaccines ..."
+                        name="vaccine"
+                        id="vaccine"
+                    />
+                    <app-input-item-search 
+                        label="Select Existing Patients Medications"
+                        placeholder="Search medications ..."
+                        name="existingMedication"
+                        id="existingMedication"
+                    />
+                    <app-input-item-search 
+                        label="Select Patients Medication Allergies"
+                        placeholder="Search Allergies ..."
+                        name="alergies"
+                        id="alergies"
+                    />
+                </div>
+            </div>
+
+            <div class="newPatientAction d-flex align-items-center justify-content-end flex-wrap">
+                <button class="newPatientCancelBtn d-flex align-items-center justify-content-center gap-1">
+                    <span class="btnText d-inline-block fw-bolder">
+                        Cancel
+                    </span>
+                    <span class="btnIcon d-inline-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 19" stroke="curentColor" fill="none">
+                            <path d="M14.2246 4.4375L4.09961 14.5625" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14.2246 14.5625L4.09961 4.4375" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+                <button class="newPatientSaveBtn d-flex align-items-center justify-content-center gap-1">
+                    <span class="btnText d-inline-block fw-bolder">
+                        Save
+                    </span>
+                    <span class="btnIcon d-inline-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 17" stroke="currentColor" fill="none">
+                            <path d="M12.9741 5.70687V13.5C12.9741 13.6326 12.9247 13.7598 12.8368 13.8536C12.7489 13.9473 12.6297 14 12.5054 14H3.13037C3.00605 14 2.88682 13.9473 2.79891 13.8536C2.71101 13.7598 2.66162 13.6326 2.66162 13.5V3.5C2.66162 3.36739 2.71101 3.24021 2.79891 3.14645C2.88682 3.05268 3.00605 3 3.13037 3H10.4364C10.5606 3.00006 10.6796 3.05266 10.7675 3.14625L12.837 5.35375C12.9248 5.44745 12.9741 5.57444 12.9741 5.70687Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M5.00537 14V10C5.00537 9.86739 5.05476 9.74021 5.14266 9.64645C5.23057 9.55268 5.3498 9.5 5.47412 9.5H10.1616C10.2859 9.5 10.4052 9.55268 10.4931 9.64645C10.581 9.74021 10.6304 9.86739 10.6304 10V14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9.22412 5H5.94287" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</section>

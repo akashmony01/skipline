@@ -1,0 +1,55 @@
+.inputItem {
+    padding: 13px 15px;
+    background-color: var(--bg-2);
+    border-radius: 5px;
+}
+
+.inputLabel {
+    display: inline-block;
+    background-color: var(--bg-2);
+    color: var(--primary);
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+    padding-right: 10px;
+}
+
+.inputItem.focused .inputLabel {
+    color: var(--text);
+}
+
+.inputField {
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.inputField:focus {
+    outline: none;
+}
+
+
+/* for select inputs */
+
+.specialInputParent {
+    width: auto;
+    position: relative;
+}
+
+select.inputField {
+    width: auto;
+    appearance: none;
+    text-align: left;
+    cursor: pointer;
+    padding: 0px 22px 0px 10px;
+}
+
+.selectIcon {
+    top: 50%;
+    right: 0px;
+    transform: translateY(-50%);
+}

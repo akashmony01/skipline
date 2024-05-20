@@ -3,6 +3,12 @@
     padding-top: 0;
 }
 
+.doctorsViewContentInner {
+    padding: 33px;
+    border-radius: 12px;
+    background-color: white;
+}
+
 .doctorsViewHeader {
     margin-top: 8px;
 }
@@ -13,12 +19,6 @@
 
 .doctorsViewDesc {
     color: var(--text-light);
-}
-
-.doctorsViewContentInner {
-    padding: 33px;
-    border-radius: 12px;
-    background-color: white;
 }
 
 
