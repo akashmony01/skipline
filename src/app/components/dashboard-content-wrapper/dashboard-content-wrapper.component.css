@@ -1,0 +1,10 @@
+.conttentWrapper {
+    padding: 40px;
+    padding-top: 0;
+}
+
+.conttentWrapperInner {
+    padding: 33px;
+    border-radius: 12px;
+    background-color: white;
+}

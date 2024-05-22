@@ -3,10 +3,10 @@
     [ngStyle]="{'background-image': 'url(' + headerBgImg.url + ')'}"
 >
     <div class="defaultHeaderHeading d-flex align-items-center flex-wrap">
-        <span class="inactiveHeading">
-            Dashboard/
+        <span *ngIf="pageGroup" class="inactiveHeading">
+            {{ pageGroup }}
         </span>
-        <span class="activeHeading fw-bold">
+        <span *ngIf="pageGroup" class="activeHeading fw-bold">
             {{ pageTitle }}
         </span>
     </div>

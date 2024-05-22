@@ -17,6 +17,8 @@ import { PatientItemComponent } from './components/patient-item/patient-item.com
 import { NewPatientComponent } from './pages/new-patient/new-patient.component';
 import { InputItemComponent } from './components/input-item/input-item.component';
 import { InputItemSearchComponent } from './components/input-item-search/input-item-search.component';
+import { SettingsComponent } from './pages/settings/settings.component';
+import { DashboardContentWrapperComponent } from './components/dashboard-content-wrapper/dashboard-content-wrapper.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { InputItemSearchComponent } from './components/input-item-search/input-i
     PatientItemComponent,
     NewPatientComponent,
     InputItemComponent,
-    InputItemSearchComponent
+    InputItemSearchComponent,
+    SettingsComponent,
+    DashboardContentWrapperComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DoctorsViewComponent } from './pages/doctors-view/doctors-view.component';
 import { NewPatientComponent } from './pages/new-patient/new-patient.component';
+import { SettingsComponent } from './pages/settings/settings.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -25,6 +26,10 @@ const routes: Routes = [
       {
         path: 'new-patient',
         component: NewPatientComponent
+      },
+      {
+        path: 'settings',
+        component: SettingsComponent
       },
     ]
   },

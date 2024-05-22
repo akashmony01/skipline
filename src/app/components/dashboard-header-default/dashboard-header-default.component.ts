@@ -8,11 +8,8 @@ import { ImageObject } from 'src/app/models/app.models';
 })
 export class DashboardHeaderDefaultComponent {
   
-  @Input() pageTitle: string;
-
-  constructor() {
-    this.pageTitle = '';
-  }
+  @Input() pageTitle: string = '';
+  @Input() pageGroup: string = 'Dashboard/';
   
   headerBgImg: ImageObject = {
     url: 'assets/images/dashboard-header-bg.svg',
