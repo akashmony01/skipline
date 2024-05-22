@@ -1,10 +1,10 @@
 <div 
     class="inputItem d-flex align-items-center justify-content-between"
-    [ngClass]="{ 'focused': isFocused }" 
+    [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select' }" 
     [ngStyle]="style"
     [ngSwitch]="type"
 >
-    <label (click)="focusInput()" [for]="id" class="inputLabel">
+    <label (click)="focusInput()" [for]="id" class="inputLabel fw-bolder">
         {{ label }}
     </label>
 
@@ -23,10 +23,8 @@
             (focus)="onFocus()"
             (blur)="onBlur()"
         >
-            <option>{{placeholder}}</option>
-            <option>Male</option>
-            <option>Female</option>
-            <option>Others</option>
+            <option *ngIf="placeholder" value="">{{placeholder}}</option>
+            <ng-content></ng-content>
         </select>
     </div>
 

@@ -11,7 +11,7 @@ export class InputItemComponent {
   @Input() id: string = '';
   @Input() style: { [key: string]: string } = {};
   @Input() label: string = 'Input Label';
-  @Input() placeholder: string = 'Input placeholder';
+  @Input() placeholder: string = '';
   @Input() value: string = '';
   @Input() type: string = 'text';
 

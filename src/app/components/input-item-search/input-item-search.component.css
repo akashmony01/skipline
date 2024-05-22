@@ -2,6 +2,11 @@
     padding: 12px 15px;
     background-color: var(--bg-2);
     border-radius: 5px;
+    transition: 0.3s;
+}
+
+.inputItemSearch.focused {
+    background-color: var(--bg-3);
 }
 
 .itemTitle {
@@ -9,10 +14,7 @@
     width: 30%;
     line-height: 1.1;
     transition: 0.3s;
-}
-
-.inputItemSearch.focused .itemTitle {
-    color: var(--text);
+    font-weight: 800;
 }
 
 .itemContent {

@@ -19,6 +19,7 @@ import { InputItemComponent } from './components/input-item/input-item.component
 import { InputItemSearchComponent } from './components/input-item-search/input-item-search.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { DashboardContentWrapperComponent } from './components/dashboard-content-wrapper/dashboard-content-wrapper.component';
+import { AddPointmentComponent } from './pages/add-pointment/add-pointment.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { DashboardContentWrapperComponent } from './components/dashboard-content
     InputItemComponent,
     InputItemSearchComponent,
     SettingsComponent,
-    DashboardContentWrapperComponent
+    DashboardContentWrapperComponent,
+    AddPointmentComponent
   ],
   imports: [
     BrowserModule,

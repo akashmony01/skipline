@@ -1,0 +1,322 @@
+<section class="addApptSec">
+    <app-dashboard-header-default pageTitle="Add Appointment" />
+
+    <app-dashboard-content-wrapper>
+
+        <h1 class="addApptTitle fw-black">
+            Add Appointment
+        </h1>
+        <p class="addApptDesc">
+            Hospital Receptionist
+        </p>
+
+        <form class="addApptForm">
+
+            <div class="selectPatient d-flex align-items-center gap-3 justify-content-between">
+                <div class="existingPatient d-flex flex-wrap align-items-center">
+                    <label class="selectPatientTitle fw-bolder">
+                        Select Existing Patients
+                    </label>
+                    <input 
+                        class="selectPatientInput"
+                        id="patient"
+                        name="patient"
+                        placeholder="Select Existing Patients ..."
+                    />
+                </div>
+                <div class="addNewPatientArea d-flex justify-content-start">
+                    <a href="/new-patient" class="addNewPatientBtn d-flex align-items-center">
+                        <span class="d-inline-block">
+                            Add New Patient
+                        </span>
+                        <span class="d-inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.0644 2.4375C7.06326 2.4375 5.44101 3.86459 5.44101 5.625C5.44101 7.38541 7.06326 8.8125 9.0644 8.8125C11.0655 8.8125 12.6878 7.38541 12.6878 5.625C12.6878 3.86459 11.0655 2.4375 9.0644 2.4375ZM6.71985 5.625C6.71985 4.48591 7.76954 3.5625 9.0644 3.5625C10.3593 3.5625 11.409 4.48591 11.409 5.625C11.409 6.76409 10.3593 7.6875 9.0644 7.6875C7.76954 7.6875 6.71985 6.76409 6.71985 5.625Z"/>
+                                <path d="M3.73588 12.75C3.73588 11.818 4.59472 11.0625 5.65415 11.0625H5.94476C5.96723 11.0625 5.98956 11.0656 6.01092 11.0718L6.74883 11.2837C7.32817 11.4501 7.92489 11.5525 8.52562 11.5907C8.65204 11.5988 8.76298 11.5207 8.79155 11.4121C8.85598 11.167 8.9399 10.9286 9.04182 10.698C9.08681 10.5962 9.00227 10.4837 8.87818 10.4804C8.29283 10.4649 7.70937 10.3762 7.14578 10.2143L6.40787 10.0023C6.25835 9.95938 6.10205 9.9375 5.94476 9.9375H5.65415C3.88843 9.9375 2.45703 11.1967 2.45703 12.75V13.6412C2.45703 14.2061 2.92243 14.6878 3.55622 14.7788C5.39618 15.0431 7.25456 15.1741 9.11279 15.1718C9.24246 15.1716 9.3239 15.0484 9.26587 14.9464C9.14067 14.7263 9.03254 14.4974 8.94299 14.261C8.8951 14.1346 8.76334 14.0459 8.61188 14.0441C6.98965 14.0244 5.36867 13.8993 3.76228 13.6685C3.74706 13.6664 3.73588 13.6548 3.73588 13.6412V12.75Z"/>
+                                <path d="M15.2455 11.475C15.2455 11.1643 14.9592 10.9125 14.6061 10.9125C14.2529 10.9125 13.9666 11.1643 13.9666 11.475V12.8045C13.9666 12.9845 14.0645 13.1536 14.23 13.2594L15.0825 13.8049C15.3681 13.9876 15.768 13.9321 15.9758 13.6808C16.1835 13.4296 16.1203 13.0778 15.8347 12.8951L15.2455 12.5181V11.475Z"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6061 16.725C17.1958 16.725 19.2952 14.8781 19.2952 12.6C19.2952 10.3218 17.1958 8.47497 14.6061 8.47497C12.0163 8.47497 9.91697 10.3218 9.91697 12.6C9.91697 14.8781 12.0163 16.725 14.6061 16.725ZM14.6061 15.6C16.4895 15.6 18.0163 14.2568 18.0163 12.6C18.0163 10.9431 16.4895 9.59997 14.6061 9.59997C12.7226 9.59997 11.1958 10.9431 11.1958 12.6C11.1958 14.2568 12.7226 15.6 14.6061 15.6Z"/>
+                            </svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="basicInfo">
+                <p class="basicInfoTitle fw-black">
+                    Basic Information
+                </p>
+                <div class="basicInfoFields">
+                    <app-input-item 
+                        label="First Name"
+                        placeholder="Ed412532"
+                        type="text"
+                        name="firstName"
+                        id="firstName"
+                    />
+                    <app-input-item 
+                        label="Last Name"
+                        placeholder="Nikhil Mukherjee Rani Priya"
+                        type="text"
+                        name="lastName"
+                        id="lastName"
+                    />
+                    <app-input-item 
+                        label="Date of Birth"
+                        placeholder="2023.12.31"
+                        type="date"
+                        name="dob"
+                        id="dob"
+                    />
+                    <app-input-item
+                        label="Identifier Number"
+                        placeholder="41243253125412"
+                        type="text"
+                        name="id"
+                        id="id"
+                    />
+                </div>
+            </div>
+
+            <div class="apptInfo">
+                <p class="apptInfoTitle fw-black">
+                    Appointment Information
+                </p>
+                <div class="apptInfoFields">
+                    <app-input-item 
+                        label="Department"
+                        type="select"
+                        name="department"
+                        id="department"
+                        placeholder="-- Select Department --"
+                    >
+                        <option>Gynaecology & Obaestrics</option>
+                        <option>Another One</option>
+                        <option>New option is here</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Attending Physician"
+                        type="select"
+                        name="physician"
+                        id="physician"
+                        placeholder="-- Select Physician --"
+                    >
+                        <option>Dr. Ishaanvi Joshi</option>
+                        <option>Another One</option>
+                        <option>New option is here</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Select Time"
+                        type="time"
+                        name="time"
+                        id="time"
+                        placeholder="2023.12.31  22:13"
+                    />
+
+                    <div class="colspan3">
+                        <app-input-item-search 
+                            id="reason"
+                            name="reason"
+                            label="Select Reason for visit" 
+                            placeholder="Start typing to search and select reasons for visit ..."     
+                        />
+                    </div>
+
+                    <div class="noteArea colspan3">
+                        <div class="noteHeader d-flex align-items-center justify-content-between">
+                            <label class="noteTitle fw-bolder d-block">
+                                Add Notes if anything need
+                            </label>
+                            <span class="noteLimit fw-bolder d-block">
+                                Max 500 Character 
+                            </span>
+                        </div>
+                        <textarea
+                            class="noteTextarea"
+                            id="note"
+                            name="note"
+                            placeholder="A 72-year-old male patient with a history of hypertension presented with chest pain and shortness of breath. The study included 100 patients with type 2 diabetes, with an average age of 60 and a gender distribution of 60% female and 40% male. "
+                            rows="2"
+                        ></textarea>
+                    </div>
+
+                    <app-input-item 
+                        label="Weight"
+                        type="select"
+                        name="weight"
+                        id="weight"
+                        placeholder="65kg"
+                    >
+                        <option>75kg</option>
+                        <option>80kg</option>
+                        <option>100kg</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Height"
+                        type="select"
+                        name="height"
+                        id="wHeight"
+                        placeholder="179cm"
+                    >
+                        <option>145cm</option>
+                        <option>80kg</option>
+                        <option>100kg</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Blood Pressure"
+                        type="select"
+                        name="bp"
+                        id="bp"
+                        placeholder="12"
+                    >
+                        <option>12</option>
+                        <option>14</option>
+                        <option>54</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Temperature"
+                        type="select"
+                        name="temperature"
+                        id="temperature"
+                        placeholder="42 C"
+                    >
+                        <option>45 C</option>
+                        <option>45 C</option>
+                        <option>45 C</option>
+                    </app-input-item>
+
+                    <app-input-item 
+                        label="Heart rate"
+                        type="select"
+                        name="heartRate"
+                        id="heartRate"
+                        placeholder="14/10"
+                    >
+                        <option>14/15</option>
+                        <option>15/16</option>
+                        <option>20/5</option>
+                    </app-input-item>
+
+                    <div class="colspan3">
+                        <app-input-item-search 
+                            id="condition"
+                            name="condition"
+                            label="Select Existing health conditions" 
+                            placeholder="Start typing to search and select Health Conditions ..."     
+                        />
+                    </div>
+
+                    <div class="colspan3">
+                        <app-input-item-search 
+                            id="vaccince"
+                            name="vaccince"
+                            label="Select Patients Vaccines" 
+                            placeholder="Start typing to search and select Vaccines ..."     
+                        />
+                    </div>
+
+                    <div class="colspan3">
+                        <app-input-item-search 
+                            id="medication"
+                            name="medication"
+                            label="Select Existing Patients Medications" 
+                            placeholder="Start typing to search and select Medications ..."     
+                        />
+                    </div>
+
+                    <div class="colspan3">
+                        <app-input-item-search 
+                            id="alergies"
+                            name="alergies"
+                            label="Select Patients Medication Allergies" 
+                            placeholder="Start typing to search Allergies ..."     
+                        />
+                    </div>
+
+                    <div *ngIf="files.length" class="addedFileArea colspan3">
+                        <p class="addedFilesTitle fw-bolder">
+                            Uploaded Files:
+                        </p>
+                        <ul class="addedFiles d-flex gap-3 flex-wrap">
+                            <li 
+                                *ngFor="let file of files; let i = index"
+                                class="addedFileItem d-flex align-items-center gap-2"
+                                [title]="file.name"
+                            >
+                                <span class="afName">
+                                    {{ shortenFileName(file.name, maxFileNameLength) }}
+                                </span>
+                                <span (click)="removeFile(i)" class="afRemoveIcon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                                    </svg>                                      
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="addApptBottom colspan3 d-flex flex-column flex-xl-row gap-4 align-items-center justify-content-between">
+                        <label class="addApptFile postion-relative d-flex flex-column align-items-center justify-content-center">
+                            <input
+                                multiple 
+                                (change)="handleFileSelect($event)"
+                                class="aaInput d-none opacity-0 position-absolute top-0 start-0"
+                                name="apptFile"
+                                id="apptFile"
+                                type="file"
+                            />
+                            <span class="aaffileIcon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" stroke="currentColor" fill="none">
+                                    <path d="M10.6875 33.25H8.3125C7.99756 33.25 7.69551 33.1249 7.47281 32.9022C7.25011 32.6795 7.125 32.3774 7.125 32.0625V27.3125" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.8125 4.75H22.5625L30.875 13.0625V20.1875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.125 9.5V5.9375C7.125 5.62256 7.25011 5.32051 7.47281 5.09781C7.69551 4.87511 7.99756 4.75 8.3125 4.75H11.875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M22.5625 4.75V13.0625H30.875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M30.875 26.125V32.0625C30.875 32.3774 30.7499 32.6795 30.5272 32.9022C30.3045 33.1249 30.0024 33.25 29.6875 33.25H28.5" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M7.125 15.4375V21.375" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M16.625 33.25H22.5625" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span class="aafTitle fw-bolder">
+                                Upload File
+                            </span>
+                            <span class="aafDesc">
+                                Files must be in PDF, JPG, PNG, or ZIP format.
+                            </span>
+                        </label>
+                        <div class="addApptAction d-flex align-items-center justify-content-end flex-wrap">
+                            <button class="addApptCancelBtn d-flex align-items-center justify-content-center gap-1">
+                                <span class="btnText d-inline-block fw-bolder">
+                                    Cancel
+                                </span>
+                                <span class="btnIcon d-inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 19 19" stroke="curentColor" fill="none">
+                                        <path d="M14.2246 4.4375L4.09961 14.5625" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.2246 14.5625L4.09961 4.4375" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="addApptSaveBtn d-flex align-items-center justify-content-center gap-1">
+                                <span class="btnText d-inline-block fw-bolder">
+                                    Save
+                                </span>
+                                <span class="btnIcon d-inline-block">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 17" stroke="currentColor" fill="none">
+                                        <path d="M12.9741 5.70687V13.5C12.9741 13.6326 12.9247 13.7598 12.8368 13.8536C12.7489 13.9473 12.6297 14 12.5054 14H3.13037C3.00605 14 2.88682 13.9473 2.79891 13.8536C2.71101 13.7598 2.66162 13.6326 2.66162 13.5V3.5C2.66162 3.36739 2.71101 3.24021 2.79891 3.14645C2.88682 3.05268 3.00605 3 3.13037 3H10.4364C10.5606 3.00006 10.6796 3.05266 10.7675 3.14625L12.837 5.35375C12.9248 5.44745 12.9741 5.57444 12.9741 5.70687Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.00537 14V10C5.00537 9.86739 5.05476 9.74021 5.14266 9.64645C5.23057 9.55268 5.3498 9.5 5.47412 9.5H10.1616C10.2859 9.5 10.4052 9.55268 10.4931 9.64645C10.581 9.74021 10.6304 9.86739 10.6304 10V14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.22412 5H5.94287" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </form>
+
+    </app-dashboard-content-wrapper>
+</section>
