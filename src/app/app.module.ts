@@ -20,6 +20,10 @@ import { InputItemSearchComponent } from './components/input-item-search/input-i
 import { SettingsComponent } from './pages/settings/settings.component';
 import { DashboardContentWrapperComponent } from './components/dashboard-content-wrapper/dashboard-content-wrapper.component';
 import { AddPointmentComponent } from './pages/add-pointment/add-pointment.component';
+import { EditAppointmentComponent } from './pages/edit-appointment/edit-appointment.component';
+import { InputItemFileComponent } from './components/input-item-file/input-item-file.component';
+import { InputItemSearchListComponent } from './components/input-item-search-list/input-item-search-list.component';
+import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +43,11 @@ import { AddPointmentComponent } from './pages/add-pointment/add-pointment.compo
     InputItemSearchComponent,
     SettingsComponent,
     DashboardContentWrapperComponent,
-    AddPointmentComponent
+    AddPointmentComponent,
+    EditAppointmentComponent,
+    InputItemFileComponent,
+    InputItemSearchListComponent,
+    PatientSnapshotComponent
   ],
   imports: [
     BrowserModule,

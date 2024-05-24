@@ -1,0 +1,44 @@
+.inputFileLabel {
+    border: 2px dashed var(--border-dark);
+    padding: 40px 20px;
+    border-radius: 10px;
+    background-color: var(--bg-2);
+    cursor: pointer;
+}
+
+.inputFileTitle {
+    margin-top: 12px;
+}
+
+.inputFileDesc {
+    margin-top: 12px;
+}
+
+.addedFileArea {
+    margin-top: 20px;
+}
+
+.addedFilesTitle {
+    color: var(--text);
+}
+
+.addedFiles {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.addedFileItem {
+    padding: 6px 12px;
+    background-color: var(--bg-2);
+    border-radius: 5px;
+}
+
+.afRemoveIcon {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.afRemoveIcon:hover {
+    color: red;
+}

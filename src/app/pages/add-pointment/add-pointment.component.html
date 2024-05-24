@@ -237,56 +237,18 @@
                         />
                     </div>
 
-                    <div *ngIf="files.length" class="addedFileArea colspan3">
-                        <p class="addedFilesTitle fw-bolder">
-                            Uploaded Files:
-                        </p>
-                        <ul class="addedFiles d-flex gap-3 flex-wrap">
-                            <li 
-                                *ngFor="let file of files; let i = index"
-                                class="addedFileItem d-flex align-items-center gap-2"
-                                [title]="file.name"
-                            >
-                                <span class="afName">
-                                    {{ shortenFileName(file.name, maxFileNameLength) }}
-                                </span>
-                                <span (click)="removeFile(i)" class="afRemoveIcon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                                    </svg>                                      
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
                     <div class="addApptBottom colspan3 d-flex flex-column flex-xl-row gap-4 align-items-center justify-content-between">
-                        <label class="addApptFile postion-relative d-flex flex-column align-items-center justify-content-center">
-                            <input
-                                multiple 
-                                (change)="handleFileSelect($event)"
-                                class="aaInput d-none opacity-0 position-absolute top-0 start-0"
-                                name="apptFile"
-                                id="apptFile"
-                                type="file"
+                        <div class="addApptFile">
+                            <app-input-item-file
+                                title="Upload Files"
+                                desc="Files must be in PDF, JPG, PNG, or ZIP format."
+                                name="apptFiles"
+                                id="aaptFiles"
+                                [maxFileNameLength]=30
+                                [multiple]=true
+                                accept=".pdf,.png,.jpg,.zip"
                             />
-                            <span class="aaffileIcon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38" stroke="currentColor" fill="none">
-                                    <path d="M10.6875 33.25H8.3125C7.99756 33.25 7.69551 33.1249 7.47281 32.9022C7.25011 32.6795 7.125 32.3774 7.125 32.0625V27.3125" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M17.8125 4.75H22.5625L30.875 13.0625V20.1875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.125 9.5V5.9375C7.125 5.62256 7.25011 5.32051 7.47281 5.09781C7.69551 4.87511 7.99756 4.75 8.3125 4.75H11.875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M22.5625 4.75V13.0625H30.875" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M30.875 26.125V32.0625C30.875 32.3774 30.7499 32.6795 30.5272 32.9022C30.3045 33.1249 30.0024 33.25 29.6875 33.25H28.5" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M7.125 15.4375V21.375" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M16.625 33.25H22.5625" stroke-width="2.375" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </span>
-                            <span class="aafTitle fw-bolder">
-                                Upload File
-                            </span>
-                            <span class="aafDesc">
-                                Files must be in PDF, JPG, PNG, or ZIP format.
-                            </span>
-                        </label>
+                        </div>
                         <div class="addApptAction d-flex align-items-center justify-content-end flex-wrap">
                             <button class="addApptCancelBtn d-flex align-items-center justify-content-center gap-1">
                                 <span class="btnText d-inline-block fw-bolder">

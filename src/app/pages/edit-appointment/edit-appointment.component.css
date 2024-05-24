@@ -1,0 +1,195 @@
+.eaTitle {
+    font-size: 24px;
+}
+
+.eaDesc {
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+
+.eaAction {
+    gap: 15px;
+}
+
+.eaCancelBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--text-light);
+    text-align: center;
+    background-color: transparent;
+    stroke: var(--text-light);
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.eaCancelBtn:hover {
+    background-color: var(--text-light);
+    stroke: white;
+    gap: 10px;
+    color: white;
+}
+
+.eaSaveBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--primary);
+    text-align: center;
+    background-color: var(--primary);
+    stroke: white;
+    gap: 10px;
+    color: white;
+}
+
+
+/* ///////////////////////////////////////// */
+.eaEditBtn {
+    background-color: var(--bg-2);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--primary);
+    border: none;
+    transition: 0.3s;
+}
+
+
+.eaPatientInfo,
+.eaApptInfo {
+    margin-top: 20px;
+}
+
+.eaPatientFields,
+.eaApptFields {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.colspan3 {
+    grid-column: span 3;
+}
+
+.eaSymptoms,
+.eaVitals {
+    margin-top: 20px;
+}
+
+
+.eaSymptomsList {
+    margin-top: 5px;
+}
+
+.eaVitalsDate {
+    margin-top: 10px;
+}
+
+.eaVitaslFields {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.eaVitalsBtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.eaVitalsAddBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+
+/* /////////////////////////////////// */
+
+.eaNotes {
+    margin-top: 20px;
+}
+
+.eaNotesFileds{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.eaNoteTextarea {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--bg-2);
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.eaNoteTextarea:focus {
+    background-color: var(--bg-3);
+}
+
+/* ////////////////////// */
+
+.eaPrescription {
+    margin-top: 20px;
+}
+
+.eaPrescriptionList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.eaplItemName {
+    min-width: 200px;
+}
+
+.eaplItemBtn {
+    color: var(--secondary-dark);
+    text-decoration: underline;
+}
+
+/* ////////////////////// */
+
+.eaOtherInfo {
+    margin-top: 30px;
+}
+
+
+/* //////////////////// */
+.eaActionBottom {
+    margin-top: 40px;
+}
+
+
+
+/* ================================================ */
+@media (max-width: 1200px) {
+    .eaPatientFields,
+    .eaApptFields {
+        grid-template-columns: 1fr 1fr;
+    }
+    .colspan3 {
+        grid-column: span 2;
+    }
+    .eaNotesFileds{
+        grid-template-columns: 60% 40%;
+    }
+} 
+
+@media (max-width: 991px) {
+    .eaPatientFields,
+    .eaApptFields {
+        grid-template-columns: 1fr;
+    }
+    .colspan3 {
+        grid-column: span 1;
+    }
+    .eaNotesFileds{
+        grid-template-columns: 1fr;
+    }
+    .eaVitaslFields {
+        flex-direction: column;
+    }
+} 

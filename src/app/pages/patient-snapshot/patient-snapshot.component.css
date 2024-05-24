@@ -1,0 +1,201 @@
+.psTitle {
+    font-size: 24px;
+}
+
+.psDesc {
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+
+.psAction {
+    gap: 15px;
+}
+
+.psCancelBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--text-light);
+    text-align: center;
+    background-color: transparent;
+    stroke: var(--text-light);
+    gap: 10px;
+    color: var(--text-light);
+}
+
+.psCancelBtn:hover {
+    background-color: var(--text-light);
+    stroke: white;
+    gap: 10px;
+    color: white;
+}
+
+.psSaveBtn {
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: 1px solid var(--primary);
+    text-align: center;
+    background-color: var(--primary);
+    stroke: white;
+    gap: 10px;
+    color: white;
+}
+
+
+/* ///////////////////////////////////////// */
+.psEditBtn {
+    background-color: var(--bg-2);
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: var(--primary);
+    border: none;
+    transition: 0.3s;
+}
+
+
+.psApptInfo,
+.psApptInfo {
+    margin-top: 20px;
+}
+
+.psApptFields,
+.psApptFields {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.colspan3 {
+    grid-column: span 3;
+}
+.colspan2 {
+    grid-column: span 2;
+}
+
+.psSymptoms,
+.psVitals {
+    margin-top: 20px;
+}
+
+
+.psSymptomsList {
+    margin-top: 5px;
+}
+
+.psVitalsDate {
+    margin-top: 10px;
+}
+
+.psVitaslFields {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+.psVitalsBtn {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.psVitalsAddBtn {
+    background-color: var(--primary);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+
+/* /////////////////////////////////// */
+
+.psNotes {
+    margin-top: 20px;
+}
+
+.psNotesFileds{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 20px;
+}
+
+.psNoteTextarea {
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--bg-2);
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.psNoteTextarea:focus {
+    background-color: var(--bg-3);
+}
+
+/* ////////////////////// */
+
+.psPrescription {
+    margin-top: 20px;
+}
+
+.psPrescriptionList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.psplItemName {
+    min-width: 200px;
+}
+
+.psplItemBtn {
+    color: var(--secondary-dark);
+    text-decoration: underline;
+}
+
+/* ////////////////////// */
+
+.psOtherInfo {
+    margin-top: 30px;
+}
+
+
+/* //////////////////// */
+.psActionBottom {
+    margin-top: 40px;
+}
+
+
+
+/* ================================================ */
+@media (max-width: 1200px) {
+    .psApptFields,
+    .psApptFields {
+        grid-template-columns: 1fr 1fr;
+    }
+    .colspan3 {
+        grid-column: span 2;
+    }
+    .colspan2 {
+        grid-column: span 1;
+    }
+    .psNotesFileds{
+        grid-template-columns: 60% 40%;
+    }
+} 
+
+@media (max-width: 991px) {
+    .psApptFields,
+    .psApptFields {
+        grid-template-columns: 1fr;
+    }
+    .colspan3 {
+        grid-column: span 1;
+    }
+    .psNotesFileds{
+        grid-template-columns: 1fr;
+    }
+    .psVitaslFields {
+        flex-direction: column;
+    }
+} 

@@ -101,37 +101,6 @@ div.noteArea:has(> textarea:focus) {
     background-color: var(--bg-3);
 }
 
-
-.addedFileArea {
-    margin-top: 15px;
-}
-
-.addedFilesTitle {
-    color: var(--primary);
-}
-
-.addedFiles {
-    margin: 0;
-    margin-top: 15px;
-    padding: 0;
-}
-
-.addedFileItem {
-    padding: 6px 12px;
-    background-color: var(--bg-2);
-    border-radius: 5px;
-}
-
-.afRemoveIcon {
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.afRemoveIcon:hover {
-    color: red;
-}
-
-
 .addApptAction {
     margin-top: 20px;
     gap: 15px;
@@ -172,19 +141,6 @@ div.noteArea:has(> textarea:focus) {
 
 .addApptFile {
     width: 65%;
-    border: 2px dashed var(--border-dark);
-    padding: 40px 20px;
-    border-radius: 10px;
-    background-color: var(--bg-2);
-    cursor: pointer;
-}
-
-.aafTitle {
-    margin-top: 12px;
-}
-
-.aafDesc {
-    margin-top: 12px;
 }
 
 

@@ -7,11 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class NotifItemComponent {
 
-  @Input() title: string;
-
-  constructor() {
-    this.title = '';
-  }
+  @Input() title: string = '';
 
   isShowOption: boolean = false;
 

@@ -8,6 +8,8 @@ import { DoctorsViewComponent } from './pages/doctors-view/doctors-view.componen
 import { NewPatientComponent } from './pages/new-patient/new-patient.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { AddPointmentComponent } from './pages/add-pointment/add-pointment.component';
+import { EditAppointmentComponent } from './pages/edit-appointment/edit-appointment.component';
+import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -35,6 +37,14 @@ const routes: Routes = [
       {
         path: 'add-appointment',
         component: AddPointmentComponent
+      },
+      {
+        path: 'edit-appointment',
+        component: EditAppointmentComponent
+      },
+      {
+        path: 'patient-snapshot',
+        component: PatientSnapshotComponent
       },
     ]
   },

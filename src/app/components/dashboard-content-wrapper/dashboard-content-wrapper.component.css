@@ -1,10 +1,25 @@
-.conttentWrapper {
+.contentWrapper {
     padding: 40px;
     padding-top: 0;
 }
 
-.conttentWrapperInner {
+.contentWrapperInner {
     padding: 33px;
     border-radius: 12px;
     background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.contentWrapperBg {
+    z-index: 0;
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+}
+
+.contentWrapperContent {
+    z-index: 1;
 }
