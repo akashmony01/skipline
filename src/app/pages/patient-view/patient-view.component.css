@@ -1,0 +1,142 @@
+.patientViewTitle {
+    font-size: 24px;
+}
+
+.patientViewDesc {
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+
+.patientViewSearchInput {
+    background-color: transparent;
+    padding: 3px 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    width: 160px;
+    transition: 0.3s;
+    color: var(--text);
+}
+
+.patientViewSearchInput:focus{
+    outline: none;
+    border-bottom: 1px solid var(--text);
+}
+
+.patientViewSearchInput::placeholder {
+    color: var(--text);
+}
+
+.patientViewSearchBtn {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ////////////////// */
+.patientViewContent {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    gap: 5%;
+    align-items: start;
+}
+
+
+.pvForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.colspan2 {
+    grid-column: span 2;
+}
+
+
+/* ///////////////////// */
+.pvVitalsDate {
+    margin-top: 10px;
+}
+
+.pvVitalsDate {
+    margin-top: 10px;
+}
+
+.pvVitaslFields {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+
+/* //////////////////////// */
+.pvOtherInfo {
+    margin-top: 30px;
+}
+
+
+
+/* //////////////////////////// */
+.activeAppt {
+    padding: 25px;
+    background-color: var(--bg-2);
+    border-radius: 12px;
+}
+
+.activeApptTitle {
+    font-size: 16px;
+}
+
+.activeApptList {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+.completedAppt {
+    margin-top: 25px;
+    padding: 25px;
+    background-color: var(--bg-2);
+    border-radius: 12px;
+}
+
+.completedApptTitle {
+    font-size: 16px;
+}
+
+.completedApptList {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+/* ======================================= */
+@media (max-width: 1200px) { 
+    .patientViewContent {
+        grid-template-columns: 55% 40%;
+    }
+    .pvForm {
+        grid-template-columns: 1fr;
+    }
+    .colspan2 {
+        grid-column: span 1;
+    }
+}
+
+
+@media (max-width: 991px) { 
+    .patientViewContent {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

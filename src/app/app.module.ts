@@ -13,17 +13,19 @@ import { NotifItemComponent } from './components/notif-item/notif-item.component
 import { DashboardHeaderComponent } from './components/dashboard-header/dashboard-header.component';
 import { DoctorsViewComponent } from './pages/doctors-view/doctors-view.component';
 import { DashboardHeaderDefaultComponent } from './components/dashboard-header-default/dashboard-header-default.component';
-import { PatientItemComponent } from './components/patient-item/patient-item.component';
+import { AppointmentItemComponent } from './components/appointment-item/appointment-item.component';
 import { NewPatientComponent } from './pages/new-patient/new-patient.component';
 import { InputItemComponent } from './components/input-item/input-item.component';
 import { InputItemSearchComponent } from './components/input-item-search/input-item-search.component';
 import { SettingsComponent } from './pages/settings/settings.component';
 import { DashboardContentWrapperComponent } from './components/dashboard-content-wrapper/dashboard-content-wrapper.component';
-import { AddPointmentComponent } from './pages/add-pointment/add-pointment.component';
+import { AddAppointmentComponent } from './pages/add-appointment/add-appointment.component';
 import { EditAppointmentComponent } from './pages/edit-appointment/edit-appointment.component';
 import { InputItemFileComponent } from './components/input-item-file/input-item-file.component';
 import { InputItemSearchListComponent } from './components/input-item-search-list/input-item-search-list.component';
 import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
+import { PatientViewComponent } from './pages/patient-view/patient-view.component';
+import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appointment-snapshot.component';
 
 @NgModule({
   declarations: [
@@ -37,17 +39,19 @@ import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snaps
     DashboardHeaderComponent,
     DoctorsViewComponent,
     DashboardHeaderDefaultComponent,
-    PatientItemComponent,
+    AppointmentItemComponent,
     NewPatientComponent,
     InputItemComponent,
     InputItemSearchComponent,
     SettingsComponent,
     DashboardContentWrapperComponent,
-    AddPointmentComponent,
+    AddAppointmentComponent,
     EditAppointmentComponent,
     InputItemFileComponent,
     InputItemSearchListComponent,
-    PatientSnapshotComponent
+    PatientSnapshotComponent,
+    PatientViewComponent,
+    AppointmentSnapshotComponent
   ],
   imports: [
     BrowserModule,

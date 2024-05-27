@@ -29,12 +29,16 @@
                     </svg>
                 </button>
             </form>
-            <select class="doctorViewSelect form-select">
-                <option selected>Select Date 2023.11.12</option>
-                <option value="1">2023.11.12</option>
-                <option value="2">2023.11.12</option>
-                <option value="3">2023.11.12</option>
-            </select>
+            <div class="doctorViewDate">
+                <app-input-item 
+                    name="date"
+                    id="date"
+                    type="date"
+                    label="Select Date"
+                    placeholder="2023.11.12"
+                    designMode="alt"
+                />
+            </div>
         </div>
 
         <div class="activePatient">
@@ -42,9 +46,16 @@
                 Active Patients
             </h2>
             <div class="activePatientList">
-                <app-patient-item />
-                <app-patient-item />
-                <app-patient-item />
+                <app-appointment-item
+                    name="Hasehma Ali"
+                    gender="Female"
+                    reason="This is her reason"
+                    department="dental"
+                    apptDate="22-22-22"
+                    [isComplete]=false
+                />
+                <app-appointment-item />
+                <app-appointment-item />
             </div>
         </div>
 
@@ -53,9 +64,30 @@
                 Completed
             </h2>
             <div class="completedPatientList">
-                <app-patient-item />
-                <app-patient-item />
-                <app-patient-item />
+                <app-appointment-item 
+                    name="Hasehma Ali"
+                    gender="Female"
+                    reason="This is her reason"
+                    department="dental"
+                    apptDate="22-22-22"
+                    [isComplete]=true
+                />
+                <app-appointment-item
+                    name="Hasehma Ali"
+                    gender="Male"
+                    reason="This is her reason"
+                    department="dfg"
+                    apptDate="22-22-22"
+                    [isComplete]=true
+                />
+                <app-appointment-item 
+                    name="Hasehma Ali"
+                    gender="Others"
+                    reason="This is her reason"
+                    department="sbhj"
+                    apptDate="22-354-22"
+                    [isComplete]=true
+                />
             </div>
         </div>
     </app-dashboard-content-wrapper>

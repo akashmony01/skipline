@@ -1,0 +1,238 @@
+<section class="patientViewSec">
+    <app-dashboard-header-default pageTitle="Patient View" />
+
+    <app-dashboard-content-wrapper>
+        <h1 class="patientViewTitle fw-black">
+            Patient's View
+        </h1>
+        <div class="patientViewHeader d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <p class="patientViewDesc">
+                Patient Portal
+            </p>
+            <form 
+                #myForm="ngForm"
+                (ngSubmit)="onSubmit(myForm)"
+                class="patientViewSearch d-flex justify-content-center align-items-center gap-2"
+            >
+                <input 
+                    id="searchInput"
+                    class="patientViewSearchInput"
+                    placeholder="Search Patients or ...."
+                    type="text"
+                    name="search"
+                    [(ngModel)]="searchKey"
+                />
+                <button type="submit" class="patientViewSearchBtn btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" stroke="currentColor" fill="none">
+                        <path d="M9.625 16.5C13.422 16.5 16.5 13.422 16.5 9.625C16.5 5.82804 13.422 2.75 9.625 2.75C5.82804 2.75 2.75 5.82804 2.75 9.625C2.75 13.422 5.82804 16.5 9.625 16.5Z" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14.4866 14.4863L16.5001 16.4998" stroke-width="1.375" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </form>
+            <div class="patentViewdate">
+                <app-input-item 
+                    name="date"
+                    id="date"
+                    type="date"
+                    label="Select Date"
+                    placeholder="2023.11.12"
+                    designMode="alt"
+                />
+            </div>
+        </div>
+
+        <div class="patientViewContent">
+            <form class="pvForm">
+                <app-input-item 
+                    label="Patient Name"
+                    placeholder="Ravi kumar Dega"
+                    type="text"
+                    name="name"
+                    id="name"
+                />
+                <app-input-item
+                    label="Gender"
+                    placeholder="Select"
+                    type="select"
+                    name="gender"
+                    id="gender"
+                >
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Others</option>
+                </app-input-item>
+                <app-input-item 
+                    label="Date of Birth"
+                    placeholder="2023.12.31"
+                    type="date"
+                    name="dob"
+                    id="dob"
+                />
+                <app-input-item
+                    label="Identifier Number"
+                    placeholder="41243253125412"
+                    type="text"
+                    name="id"
+                    id="id"
+                />
+                <app-input-item
+                    label="Email"
+                    placeholder="Enter Email Address"
+                    type="email"
+                    name="email"
+                    id="email"
+                />
+                <app-input-item
+                    label="Phone"
+                    placeholder="Phone Number"
+                    type="text"
+                    name="phone"
+                    id="phone"
+                />
+                <div class="colspan2">
+                    <app-input-item
+                        label="Addres"
+                        placeholder=" 456 Park Avenue, Apt 201, 123 Main Street, Anytown, 12345"
+                        type="text"
+                        name="address"
+                        id="address"
+                    />
+                </div>
+                <div class="pvVitals colspan2">
+                    <p class="pvVitalsDate d-flex align-items-center gap-1">
+                        <span class="d-inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00006 3.25C7.41427 3.25 7.75006 3.58579 7.75006 4V5.66763C10.5778 5.4158 13.4223 5.4158 16.2501 5.66763V4C16.2501 3.58579 16.5858 3.25 17.0001 3.25C17.4143 3.25 17.7501 3.58579 17.7501 4V5.81644C19.2431 6.02754 20.4226 7.20847 20.6223 8.71484L20.7089 9.36779C21.0729 12.1141 21.0414 14.8984 20.6155 17.6359C20.4045 18.9919 19.3028 20.0335 17.9371 20.1681L16.7441 20.2858C13.589 20.5969 10.411 20.5969 7.25599 20.2858L6.06298 20.1681C4.69724 20.0335 3.59558 18.9919 3.38457 17.6359C2.95861 14.8984 2.92717 12.1141 3.29121 9.36779L3.37776 8.71484C3.57744 7.20845 4.75699 6.02751 6.25006 5.81643V4C6.25006 3.58579 6.58585 3.25 7.00006 3.25ZM7.44523 7.2028C10.4744 6.90408 13.5256 6.90408 16.5548 7.2028L17.4603 7.2921C18.327 7.37757 19.0209 8.04854 19.1353 8.91194L19.2219 9.56489C19.2521 9.793 19.2795 10.0214 19.3039 10.25H4.69612C4.72061 10.0214 4.74797 9.79301 4.7782 9.5649L4.86475 8.91194C4.9792 8.04854 5.67303 7.37757 6.53977 7.2921L7.44523 7.2028ZM4.57689 11.75C4.47871 13.6381 4.57544 15.5332 4.86674 17.4052C4.97258 18.0854 5.52515 18.6078 6.21019 18.6754L7.4032 18.793C10.4603 19.0945 13.5397 19.0945 16.5969 18.793L17.7899 18.6754C18.4749 18.6078 19.0275 18.0854 19.1333 17.4052C19.4246 15.5332 19.5214 13.6381 19.4232 11.75H4.57689Z" />
+                            </svg>
+                        </span>
+                        <span class="d-inline-block">
+                            Vitals recorded: 2024.02.24 08:00 AM 
+                        </span>
+                    </p>
+                    <div class="pvVitaslFields d-flex flex-wrap">
+                        <app-input-item 
+                            label="Weight"
+                            type="select"
+                            name="weight"
+                            id="weight"
+                            placeholder="65kg"
+                        >
+                            <option>75kg</option>
+                            <option>80kg</option>
+                            <option>100kg</option>
+                        </app-input-item>
+
+                        <app-input-item 
+                            label="Height"
+                            type="select"
+                            name="height"
+                            id="wHeight"
+                            placeholder="179cm"
+                        >
+                            <option>145cm</option>
+                            <option>80kg</option>
+                            <option>100kg</option>
+                        </app-input-item>
+
+                        <app-input-item 
+                            label="Blood Pressure"
+                            type="select"
+                            name="bp"
+                            id="bp"
+                            placeholder="12"
+                        >
+                            <option>12</option>
+                            <option>14</option>
+                            <option>54</option>
+                        </app-input-item>
+
+                        <app-input-item 
+                            label="Temperature"
+                            type="select"
+                            name="temperature"
+                            id="temperature"
+                            placeholder="42 C"
+                        >
+                            <option>45 C</option>
+                            <option>45 C</option>
+                            <option>45 C</option>
+                        </app-input-item>
+
+                        <app-input-item 
+                            label="Heart rate"
+                            type="select"
+                            name="heartRate"
+                            id="heartRate"
+                            placeholder="14/10"
+                        >
+                            <option>14/15</option>
+                            <option>15/16</option>
+                            <option>20/5</option>
+                        </app-input-item>
+                    </div>
+                </div>
+                <div class="pvOtherInfo colspan2">
+                    <app-input-item-search-list
+                        title="Patient Pre-Existing Conditions Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="pre-cond"
+                        id="pre-cond"
+                    />
+                    <app-input-item-search-list
+                        title="Patient Vaccines Information"
+                        placeholder="Add new vaccines taken by the patient..."
+                        name="vaccine"
+                        id="vaccine"
+                    />
+                    <app-input-item-search-list
+                        title="Patient Medication Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="medic"
+                        id="medic"
+                    />
+                    <app-input-item-search-list
+                        title="Patient Allergies Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="alergy"
+                        id="alergy"
+                    />
+                </div> 
+            </form>
+            <div class="pvAppt">
+                <div class="activeAppt">
+                    <h2 class="activeApptTitle fw-medium">
+                        Active Patients
+                    </h2>
+                    <div class="activeApptList">
+                        <app-appointment-item
+                            name="Hasehma Ali"
+                            gender="Male"
+                            reason="This is reason"
+                            department="cancer"
+                            apptDate="22-22-55"
+                            [isComplete]=false
+                        />
+                    </div>
+                </div>
+                <div class="completedAppt">
+                    <h2 class="completedApptTitle fw-medium">
+                        Completed
+                    </h2>
+                    <div class="completedApptList">
+                        <app-appointment-item 
+                            name="Hasehma Ali"
+                            gender="Female"
+                            reason="This is her reason"
+                            department="dental"
+                            apptDate="22-22-22"
+                            [isComplete]=true
+                        />
+                        <app-appointment-item
+                            [isComplete]=true
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </app-dashboard-content-wrapper>
+</section>

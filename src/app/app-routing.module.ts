@@ -7,9 +7,11 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { DoctorsViewComponent } from './pages/doctors-view/doctors-view.component';
 import { NewPatientComponent } from './pages/new-patient/new-patient.component';
 import { SettingsComponent } from './pages/settings/settings.component';
-import { AddPointmentComponent } from './pages/add-pointment/add-pointment.component';
+import { AddAppointmentComponent } from './pages/add-appointment/add-appointment.component';
 import { EditAppointmentComponent } from './pages/edit-appointment/edit-appointment.component';
 import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
+import { PatientViewComponent } from './pages/patient-view/patient-view.component';
+import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appointment-snapshot.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -36,15 +38,23 @@ const routes: Routes = [
       },
       {
         path: 'add-appointment',
-        component: AddPointmentComponent
+        component: AddAppointmentComponent
       },
       {
         path: 'edit-appointment',
         component: EditAppointmentComponent
       },
       {
+        path: 'appointment-snapshot',
+        component: AppointmentSnapshotComponent
+      },
+      {
         path: 'patient-snapshot',
         component: PatientSnapshotComponent
+      },
+      {
+        path: 'patient-view',
+        component: PatientViewComponent
       },
     ]
   },

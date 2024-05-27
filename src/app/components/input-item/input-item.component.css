@@ -9,6 +9,11 @@
     background-color: var(--bg-3);
 }
 
+.inputItem.altDesign {
+    border-radius: 30px;
+    padding: 13px 25px;
+}
+
 .inputLabel {
     display: inline-block;
     color: var(--primary);
@@ -16,6 +21,12 @@
     transition: 0.3s;
     white-space: nowrap;
     padding-right: 10px;
+    font-weight: 800;
+}
+
+.inputItem.altDesign .inputLabel {
+    color: var(--text);
+    font-weight: 400;
 }
 
 .inputField {
@@ -29,6 +40,11 @@
 
 .inputField:focus {
     outline: none;
+}
+
+.inputItem.altDesign .inputField {
+    width: 120px;
+    font-weight: 700;
 }
 
 

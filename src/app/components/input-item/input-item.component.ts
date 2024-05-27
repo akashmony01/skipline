@@ -14,6 +14,7 @@ export class InputItemComponent {
   @Input() placeholder: string = '';
   @Input() value: string = '';
   @Input() type: string = 'text';
+  @Input() designMode: string = '';
 
   isFocused: boolean = false;
 

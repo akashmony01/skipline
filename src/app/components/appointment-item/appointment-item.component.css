@@ -34,10 +34,23 @@
     margin-top: 16px;
     font-weight: 500;
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.patientInfoItem {
+    row-gap: 0px;
+    column-gap: 15px;
+}
+
+.patientInfoItemTitle {
+    line-height: 1.15;
 }
 
 .patientInfoItemData {
     color: var(--primary);
+    line-height: 1.15;
 }
 
 .patientAction {
@@ -52,4 +65,8 @@
     padding: 0;
     color: var(--text);
     font-weight: 500;
+}
+
+.patientCompletedText {
+    color: var(--text-light);
 }

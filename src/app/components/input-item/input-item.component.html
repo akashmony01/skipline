@@ -1,10 +1,10 @@
 <div 
     class="inputItem d-flex align-items-center justify-content-between"
-    [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select' }" 
+    [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select', 'altDesign': designMode == 'alt' }" 
     [ngStyle]="style"
     [ngSwitch]="type"
 >
-    <label (click)="focusInput()" [for]="id" class="inputLabel fw-bolder">
+    <label (click)="focusInput()" [for]="id" class="inputLabel">
         {{ label }}
     </label>
 

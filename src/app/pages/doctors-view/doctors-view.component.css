@@ -36,28 +36,6 @@
     border: none;
 }
 
-.doctorViewSelect {
-    width: auto;
-    box-shadow: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    padding-right: 35px;
-    background-color: var(--bg-2);
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.doctorViewSelect:hover{
-    opacity: 0.8;
-}
-
-.doctorViewSelect:focus {
-    box-shadow: none;
-    border: none;
-}
-
 
 
 
