@@ -6,6 +6,11 @@
     padding-right: 70px;
 }
 
+.inputItemSearchList.readonlyDesign .iislField{
+    display: block;
+    padding-right: 0;
+}
+
 .iislTitle {
     line-height: 1.15;
     cursor: pointer;
@@ -55,6 +60,10 @@ div.iislInput:has(> input:focus) {
     gap: 15px;
 }
 
+.inputItemSearchList.readonlyDesign .iislList{
+    padding-right: 0;
+}
+
 .iislListItem {
     border: 1px solid var(--border-dark);
     border-radius: 5px;
@@ -63,6 +72,11 @@ div.iislInput:has(> input:focus) {
 
 .iislListItemName {
     color: var(--primary);
+    line-height: 1.15;
+}
+
+.iislListItemDate {
+    line-height: 1.15;
 }
 
 .iislItemRemoveBtn {

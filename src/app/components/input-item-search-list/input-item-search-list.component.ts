@@ -10,4 +10,5 @@ export class InputItemSearchListComponent {
   @Input() placeholder: string = '';
   @Input() name: string = '';
   @Input() id: string = '';
+  @Input() readonly: boolean = false;
 }

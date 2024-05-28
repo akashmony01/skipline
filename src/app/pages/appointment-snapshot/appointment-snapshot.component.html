@@ -1,1 +1,196 @@
-<p>appointment-snapshot works!</p>
+<section class="apptSnapSec">
+    <app-dashboard-header-default pageTitle="Selected Appointment" />
+
+    <app-dashboard-content-wrapper>
+
+        <form class="apptSnapForm">
+
+            <div class="apptSnapHeading">
+                <h1 class="asTitle fw-black">
+                    Appointment Snapshot
+                </h1>
+                <p class="asDesc">
+                    Patient Portal
+                </p>
+            </div>
+
+            <div class="apptSnapFields">
+                <div class="asApptInfo">
+                    <div class="asApptHeading d-flex align-items-center justify-content-between gap-3 flex-wrap">
+                        <p class="asApptTitle fw-black">
+                            Appointment Detials
+                        </p>
+                        <app-input-item 
+                            label="Status"
+                            value="Completed"
+                            [readonly]=true
+                            [styleForValue]="{'color': 'var(--secondary-dark)', 'fontWeight': 'bold'}"
+                        />
+                    </div>
+                    <div class="asApptFields">
+                        <app-input-item 
+                            label="Doctor’s Name"
+                            [readonly]=true
+                            id="doctor"
+                            value="Ravi kumar Dega"
+                        />
+
+                        <app-input-item 
+                            label="Department"
+                            [readonly]=true
+                            id="department"
+                            value="Gynocologists"
+                        />
+
+                        <app-input-item 
+                            label="Date of appt."
+                            [readonly]=true
+                            id="apptDate"
+                            value="2023.12.31  22:13"
+                        />
+                    </div>
+                </div>
+                <div class="asSymptoms">
+                    <p class="asSymptomsTitle fw-black">
+                        Reason or Primary Symptoms for the Visit
+                    </p>
+                    <ol class="asSymptomsList fw-bolder">
+                        <li>
+                            Fever
+                        </li>
+                        <li>
+                            Stomach ache
+                        </li>
+                    </ol>
+                </div>
+                <div class="asVitals">
+                    <p class="asVitalsTitle fw-black">
+                        Patient Vital Recorded
+                    </p>
+                    <p class="asVitalsDate d-flex align-items-center gap-1">
+                        <span class="d-inline-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.00006 3.25C7.41427 3.25 7.75006 3.58579 7.75006 4V5.66763C10.5778 5.4158 13.4223 5.4158 16.2501 5.66763V4C16.2501 3.58579 16.5858 3.25 17.0001 3.25C17.4143 3.25 17.7501 3.58579 17.7501 4V5.81644C19.2431 6.02754 20.4226 7.20847 20.6223 8.71484L20.7089 9.36779C21.0729 12.1141 21.0414 14.8984 20.6155 17.6359C20.4045 18.9919 19.3028 20.0335 17.9371 20.1681L16.7441 20.2858C13.589 20.5969 10.411 20.5969 7.25599 20.2858L6.06298 20.1681C4.69724 20.0335 3.59558 18.9919 3.38457 17.6359C2.95861 14.8984 2.92717 12.1141 3.29121 9.36779L3.37776 8.71484C3.57744 7.20845 4.75699 6.02751 6.25006 5.81643V4C6.25006 3.58579 6.58585 3.25 7.00006 3.25ZM7.44523 7.2028C10.4744 6.90408 13.5256 6.90408 16.5548 7.2028L17.4603 7.2921C18.327 7.37757 19.0209 8.04854 19.1353 8.91194L19.2219 9.56489C19.2521 9.793 19.2795 10.0214 19.3039 10.25H4.69612C4.72061 10.0214 4.74797 9.79301 4.7782 9.5649L4.86475 8.91194C4.9792 8.04854 5.67303 7.37757 6.53977 7.2921L7.44523 7.2028ZM4.57689 11.75C4.47871 13.6381 4.57544 15.5332 4.86674 17.4052C4.97258 18.0854 5.52515 18.6078 6.21019 18.6754L7.4032 18.793C10.4603 19.0945 13.5397 19.0945 16.5969 18.793L17.7899 18.6754C18.4749 18.6078 19.0275 18.0854 19.1333 17.4052C19.4246 15.5332 19.5214 13.6381 19.4232 11.75H4.57689Z" />
+                            </svg>
+                        </span>
+                        <span class="d-inline-block">
+                            Vitals recorded: 2024.02.24 08:00 AM 
+                        </span>
+                    </p>
+                    <div class="asVitaslFields d-flex flex-wrap">
+                        <app-input-item 
+                            label="Weight"
+                            [readonly]=true
+                            id="weight"
+                            value="65kg"
+                        />
+
+                        <app-input-item 
+                            label="Height"
+                            [readonly]=true
+                            id="wHeight"
+                            value="179cm"
+                        >
+                            <option>145cm</option>
+                            <option>80kg</option>
+                            <option>100kg</option>
+                        </app-input-item>
+
+                        <app-input-item 
+                            label="Blood Pressure"
+                            [readonly]=true
+                            id="bp"
+                            value="12"
+                        />
+
+                        <app-input-item 
+                            label="Temperature"
+                            [readonly]=true
+                            id="temperature"
+                            value="42 C"
+                        />
+
+                        <app-input-item 
+                            label="Heart rate"
+                            [readonly]=true
+                            id="heartRate"
+                            value="14/10"
+                        />
+                    </div>
+                </div>
+                <div class="asNotes">
+                    <p class="asNotesTitle fw-black">
+                        Visit Notes 
+                    </p>
+
+                    <p class="asNoteTextarea">
+                        A 72-year-old male patient with a history of hypertension presented with chest pain and shortness of breath. The study included 100 patients with type 2 diabetes, with an average age of 60 and a gender distribution of 60% female and 40% male. A 72-year-old male patient with a history of hypertension presented with chest pain and shortness of breath. 
+                    </p>
+                </div>
+                <div class="asPrescription">
+                    <p class="asPrescriptionTitle fw-black">
+                        Prescription or files to download
+                    </p>
+                    <ol class="asPrescriptionList">
+                        <li class="asplItem">
+                            <div class="d-flex align-items-center gap-4 flex-wrap fw-bolder">
+                                <p class="asplItemName">
+                                    Appointment-lab
+                                </p>
+                                <a href="" class="asplItemBtn asplItemView">
+                                    View
+                                </a>
+                                <a href="" class="asplItemBtn asplItemDownload">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                        <li class="asplItem">
+                            <div class="d-flex align-items-center gap-4 flex-wrap fw-bolder">
+                                <p class="asplItemName">
+                                    Prescription
+                                </p>
+                                <a href="" class="asplItemBtn asplItemView">
+                                    View
+                                </a>
+                                <a href="" class="asplItemBtn asplItemDownload">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="asOtherInfo">
+                    <app-input-item-search-list
+                        title="Patient Pre-Existing Conditions Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="pre-cond"
+                        id="pre-cond"
+                        [readonly]=true
+                    />
+                    <app-input-item-search-list
+                        title="Patient Vaccines Information"
+                        placeholder="Add new vaccines taken by the patient..."
+                        name="vaccine"
+                        id="vaccine"
+                        [readonly]=true
+                    />
+                    <app-input-item-search-list
+                        title="Patient Medication Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="medic"
+                        id="medic"
+                        [readonly]=true
+                    />
+                    <app-input-item-search-list
+                        title="Patient Allergies Information"
+                        placeholder="Add new preconditions for the patient..."
+                        name="alergy"
+                        id="alergy"
+                        [readonly]=true
+                    />
+                </div> 
+            </div>
+        </form>
+    </app-dashboard-content-wrapper>
+</section>

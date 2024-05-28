@@ -131,6 +131,9 @@
     .colspan2 {
         grid-column: span 1;
     }
+    .pvVitaslFields {
+        flex-direction: column;
+    }
 }
 
 

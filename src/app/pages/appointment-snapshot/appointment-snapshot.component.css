@@ -1,0 +1,115 @@
+.asTitle {
+    font-size: 24px;
+}
+
+.asDesc {
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+
+
+/* ///////////////////////////////////////// */
+.asApptInfo {
+    margin-top: 20px;
+}
+
+.asApptFields {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.asSymptoms,
+.asVitals {
+    margin-top: 20px;
+}
+
+
+.asSymptomsList {
+    margin-top: 5px;
+}
+
+
+
+/* //////////////////////////////////// */
+.asVitalsDate {
+    margin-top: 10px;
+}
+
+.asVitaslFields {
+    margin-top: 15px;
+    gap: 20px;
+}
+
+
+/* /////////////////////////////////// */
+
+.asNotes {
+    margin-top: 20px;
+}
+
+.asNoteTextarea {
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: var(--bg-2);
+    line-height: 1.5;
+    transition: 0.3s;
+}
+
+.asNoteTextarea:focus {
+    background-color: var(--bg-3);
+}
+
+/* ////////////////////// */
+
+.asPrescription {
+    margin-top: 20px;
+}
+
+.asPrescriptionList {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.asplItemName {
+    min-width: 200px;
+}
+
+.asplItemBtn {
+    color: var(--secondary-dark);
+    text-decoration: underline;
+}
+
+/* ////////////////////// */
+
+.asOtherInfo {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+/* ================================================ */
+@media (max-width: 1200px) {
+    .asApptFields {
+        grid-template-columns: 1fr 1fr;
+    }
+} 
+
+@media (max-width: 991px) {
+    .asApptFields {
+        grid-template-columns: 1fr;
+    }
+    .asVitaslFields {
+        flex-direction: column;
+    }
+} 

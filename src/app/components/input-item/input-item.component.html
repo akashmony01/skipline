@@ -1,15 +1,22 @@
 <div 
     class="inputItem d-flex align-items-center justify-content-between"
     [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select', 'altDesign': designMode == 'alt' }" 
-    [ngStyle]="style"
-    [ngSwitch]="type"
 >
     <label (click)="focusInput()" [for]="id" class="inputLabel">
         {{ label }}
     </label>
 
 
-    <div *ngSwitchCase="'select'" class="specialInputParent position-relative">
+    <p 
+        *ngIf="readonly" 
+        class="readonlyValue"
+        [ngStyle]="styleForValue"
+    >
+        {{value}}
+    </p>
+
+
+    <div *ngIf="!readonly && type == 'select'" class="specialInputParent position-relative">
         <span class="selectIcon position-absolute z-0">
             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="8" viewBox="0 0 13 8" fill="none">
                 <path d="M11 1.32813L6.5 6.32812L2 1.32813" stroke="#5A36CD" stroke-width="2.02041" stroke-linecap="round" stroke-linejoin="round"/>
@@ -29,7 +36,7 @@
     </div>
 
     <input
-        *ngSwitchDefault
+        *ngIf="!readonly && type != 'select'"
         #inputField 
         [id]="id"
         class="inputField"

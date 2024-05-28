@@ -26,6 +26,7 @@ import { InputItemSearchListComponent } from './components/input-item-search-lis
 import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
 import { PatientViewComponent } from './pages/patient-view/patient-view.component';
 import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appointment-snapshot.component';
+import { BackgroundImageComponent } from './components/background-image/background-image.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appoi
     InputItemSearchListComponent,
     PatientSnapshotComponent,
     PatientViewComponent,
-    AppointmentSnapshotComponent
+    AppointmentSnapshotComponent,
+    BackgroundImageComponent
   ],
   imports: [
     BrowserModule,

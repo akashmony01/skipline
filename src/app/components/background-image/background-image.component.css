@@ -1,0 +1,6 @@
+.bgImage {
+    z-index: 0;
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+}

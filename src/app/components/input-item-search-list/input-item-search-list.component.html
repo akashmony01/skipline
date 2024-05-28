@@ -1,9 +1,12 @@
-<div class="inputItemSearchList">
+<div 
+    class="inputItemSearchList"
+    [ngClass]="{ 'readonlyDesign': readonly, }"
+>
     <div class="iislField">
         <label [for]="id" class="iislTitle fw-black">
             {{ title }}
         </label>
-        <div class="iislInput position-relative">
+        <div *ngIf="!readonly" class="iislInput position-relative">
             <button class="iislBtn position-absolute">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" stroke="currentColor" fill="none">
                     <path d="M16.5 24C20.9183 24 24.5 20.4183 24.5 16C24.5 11.5817 20.9183 8 16.5 8C12.0817 8 8.5 11.5817 8.5 16C8.5 20.4183 12.0817 24 16.5 24Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -19,7 +22,7 @@
         </div>
     </div>
     <ul class="iislList">
-        <li class="iislListItem fw-bolder position-relative d-flex align-items-center justify-content-between gap-y-2 flex-wrap">
+        <li class="iislListItem fw-bolder position-relative d-flex align-items-center justify-content-between gap-1 flex-wrap">
             <p class="iislListItemName">
                 1. Covid
             </p>
@@ -33,7 +36,7 @@
                     Vitals recorded: 2024.02.24 08:00 AM 
                 </span>
             </p>
-            <button class="iislItemRemoveBtn position-absolute">
+            <button *ngIf="!readonly" class="iislItemRemoveBtn position-absolute">
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" stroke="currentColor" fill="none">
                       <path d="M12.5 27.5C16.6421 31.6421 23.3579 31.6421 27.5 27.5C31.6421 23.3578 31.6421 16.6421 27.5 12.5C23.3579 8.35786 16.6421 8.35786 12.5 12.5C8.35788 16.6421 8.35788 23.3578 12.5 27.5Z" stroke-width="2.25" stroke-miterlimit="10"/>
                       <path d="M16.875 16.875L23.125 23.125" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round"/>

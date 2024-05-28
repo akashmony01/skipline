@@ -68,3 +68,9 @@ select.inputField {
     right: 0px;
     transform: translateY(-50%);
 }
+
+
+/* //////////////////////// */
+.readonlyValue {
+    color: var(--text);
+}

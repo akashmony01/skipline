@@ -9,19 +9,22 @@ export class InputItemComponent {
 
   @Input() name: string = '';
   @Input() id: string = '';
-  @Input() style: { [key: string]: string } = {};
+  @Input() styleForValue: { [key: string]: string } = {};
   @Input() label: string = 'Input Label';
   @Input() placeholder: string = '';
   @Input() value: string = '';
   @Input() type: string = 'text';
   @Input() designMode: string = '';
+  @Input() readonly: boolean = false;
 
   isFocused: boolean = false;
 
   @ViewChild('inputField') inputField!: ElementRef;
 
   focusInput() {
-    this.inputField.nativeElement.focus();
+    if(this.inputField){
+      this.inputField.nativeElement.focus();
+    }
   }
 
   onFocus() {
