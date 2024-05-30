@@ -1,0 +1,245 @@
+.analyticsTitle {
+    font-size: 24px;
+}
+
+.analyticsDesc {
+    color: var(--text-light);
+    margin-top: 8px;
+}
+
+/* /////////////////// */
+
+.analyticsHeading {
+    margin-top: 20px;
+}
+
+.ahBtn {
+    padding: 13px 25px;
+    background-color: var(--primary);
+    border-radius: 30px;
+    color: white;
+}
+
+
+
+/* /////////////////////// */
+.analyticsStats {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+
+.boxParent {
+    background-color: white;
+    color: var(--text);
+    border-radius: 13px;
+    position: relative;
+    height: 155px;
+    padding-bottom: 45px;
+    overflow: hidden;
+    border: 4px solid #FFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.boxContent {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px;
+    gap: 5px;
+    line-height: 1.1;
+}
+
+.boxNumber {
+    font-size: 23px;
+}
+
+.boxDesc {
+    display: block;
+}
+
+.boxBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    padding-bottom: 8px;
+    background-color: white;
+    font-size: 15px;
+    line-height: 1.15;
+}
+
+.boxIcon {
+    color: var(--text);
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+
+.totatlAppt .boxContent {
+    background-color: var(--secondary-light);
+}
+
+.activeAppt .boxContent {
+    background-color: var(--tertiary);
+}
+
+.completedAppt .boxContent {
+    background-color: var(--quaternary);
+}
+
+.noShowsAppt .boxContent {
+    background-color: var(--quinary);
+}
+
+.cancelledAppt .boxContent {
+    background-color: var(--senary);
+}
+
+/* /////////////////////////////////// */
+
+.analyticsChart {
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 6px solid #FFF;
+    background-color: white;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.05);
+}
+
+.acHeading {
+    padding: 25px;
+    background-color: var(--bg-3);
+}
+
+.achNumber {
+    font-size: 40px;
+}
+
+.achContent{
+    margin-top: 20px;
+}
+
+.achText {
+    color: var(--text-light);
+}
+
+.achUpdatedIcon {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.achGraph {
+    padding: 25px;
+    text-align: center;
+}
+
+
+/* ///////////////////// */
+
+.analyticsData {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: start;
+}
+
+.adSection {
+    background-color: var(--bg-3);
+    padding: 23px 20px;
+    border-radius: 12px;
+}
+
+.adTableParent {
+    margin-top: 30px;
+    display: block;
+    overflow-x: auto;
+}
+
+
+.dashboardDataInner {
+    display: block;
+    overflow-x: auto;
+}
+
+.adTable {
+    width: 100%;
+    table-layout: auto;
+    border-collapse: separate; 
+    border-spacing: 0px 10px;
+}
+
+.adTable tr {
+    background-color: white;
+    transition: 0.3s;
+}
+
+.adTable tr:hover {
+    background-color: var(--bg-2);
+}
+
+.adTable tr:first-child {
+    background-color: transparent;
+}
+
+.adTable th{
+    padding: 13px 20px;
+    padding-bottom: 5px;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+.adTable td {
+    padding: 13px 20px;
+    vertical-align: top;
+} 
+
+.adTable td:first-child {
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.adTable td:last-child {
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+
+
+@media (max-width: 1200px) { 
+    .analyticsStats { 
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .achNumber {
+        font-size: 35px;
+    }
+    .analyticsData { 
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 991px) { 
+    .analyticsStats { 
+        grid-template-columns: 1fr 1fr;
+    }
+    .achNumber {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 640px) { 
+    .analyticsStats { 
+        grid-template-columns: 1fr;
+    }
+}

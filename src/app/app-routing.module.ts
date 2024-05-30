@@ -12,10 +12,13 @@ import { EditAppointmentComponent } from './pages/edit-appointment/edit-appointm
 import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snapshot.component';
 import { PatientViewComponent } from './pages/patient-view/patient-view.component';
 import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appointment-snapshot.component';
+import { AnalyticsComponent } from './pages/analytics/analytics.component';
+import { AdminProfileComponent } from './pages/admin-profile/admin-profile.component';
+import { LanguagePreferenceComponent } from './pages/language-preference/language-preference.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   {
     path: '',
     component: MainLayoutComponent,
@@ -34,7 +37,21 @@ const routes: Routes = [
       },
       {
         path: 'settings',
-        component: SettingsComponent
+        children : [
+          {
+            path: '',
+            pathMatch: 'full',
+            component: SettingsComponent
+          },
+          {
+            path: 'admin-profile',
+            component: AdminProfileComponent
+          },
+          {
+            path: 'language-preference',
+            component: LanguagePreferenceComponent
+          },
+        ]
       },
       {
         path: 'add-appointment',
@@ -55,6 +72,10 @@ const routes: Routes = [
       {
         path: 'patient-view',
         component: PatientViewComponent
+      },
+      {
+        path: 'analytics',
+        component: AnalyticsComponent
       },
     ]
   },

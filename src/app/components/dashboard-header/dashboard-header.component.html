@@ -37,8 +37,8 @@
     </div>
     <div class="dashboardHeaderContent d-flex justify-content-center align-items-streatch">
         <div class="dashboardReadmission boxParent">
-            <div class="readmissionChart h-100 w-100 fw-bold d-flex align-items-center justify-content-center">
-                Chart
+            <div class="readmissionChart">
+                <app-mini-chart />
             </div>
             <div class="readmissionText boxBottom">
                 <p class="readmissiionTitle">
@@ -77,63 +77,8 @@
             </div>
         </div>
         <div class="dashboardActivity boxParent">
-            <div class="activityChart d-flex justify-content-between gap-3">
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 75%; background-color: red;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        S
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 56%; background-color: blue;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        M
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 25%; background-color: gold;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        T
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 35%; background-color: indigo;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        W
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 55%; background-color: skyblue;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        T
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 85%; background-color: black;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        F
-                    </p>
-                </div>
-                <div class="dayItem d-flex flex-column justify-content-center align-items-center">
-                    <div class="dayBar position-relative">
-                        <span class="dayBarFilled position-absolute" style="height: 45%; background-color: green;"></span>
-                    </div>
-                    <p class="dayIntial">
-                        S
-                    </p>
-                </div>
+            <div class="activityChart">
+                <app-bar-chart/>
             </div>
             <div class="activityText boxBottom">
                 <p class="activityTitle">

@@ -94,17 +94,26 @@
   --primary: #5A36CD;
   --primary-dark: #1C0F46;
   --primary-light: #F4F0FF;
+
   --text: #000000;
   --text-light: #838383;
+  
   --bg-1: #FBF9FF;
   --bg-2: #F8F8F8;
   --bg-3: #F4F0FF;
   --bg-dark: #1C0F46;
+  
   --border: #F2F2F2;
   --border-dark: #DADBE0;
+  
   --secondary: #B5FF9B;
   --secondary-light: #E5FFDC;
   --secondary-dark: #04C900;
+
+  --tertiary: #FFF6DC;
+  --quaternary: #F3D8FA;
+  --quinary: #EAEAEA;
+  --senary: #FFDCDC;
 }
 
 

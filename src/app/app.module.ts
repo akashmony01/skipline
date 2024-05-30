@@ -27,6 +27,12 @@ import { PatientSnapshotComponent } from './pages/patient-snapshot/patient-snaps
 import { PatientViewComponent } from './pages/patient-view/patient-view.component';
 import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appointment-snapshot.component';
 import { BackgroundImageComponent } from './components/background-image/background-image.component';
+import { AnalyticsComponent } from './pages/analytics/analytics.component';
+import { AdminProfileComponent } from './pages/admin-profile/admin-profile.component';
+import { LanguagePreferenceComponent } from './pages/language-preference/language-preference.component';
+import { LineChartComponent } from './components/chart/line-chart/line-chart.component';
+import { BarChartComponent } from './components/chart/bar-chart/bar-chart.component';
+import { MiniChartComponent } from './components/chart/mini-chart/mini-chart.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +59,13 @@ import { BackgroundImageComponent } from './components/background-image/backgrou
     PatientSnapshotComponent,
     PatientViewComponent,
     AppointmentSnapshotComponent,
-    BackgroundImageComponent
+    BackgroundImageComponent,
+    AnalyticsComponent,
+    AdminProfileComponent,
+    LanguagePreferenceComponent,
+    LineChartComponent,
+    BarChartComponent,
+    MiniChartComponent
   ],
   imports: [
     BrowserModule,

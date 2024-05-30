@@ -1,0 +1,275 @@
+<section class="analyticsSec">
+    <app-dashboard-header-default pageTitle="Analytics" />
+
+    <app-dashboard-content-wrapper>
+        <h1 class="analyticsTitle fw-black">
+            Analytics
+        </h1>
+        <p class="analyticsDesc">
+            Hospital Receptionist
+        </p>
+
+        <div class="analyticsHeading d-flex flex-wrap align-items-center justify-content-between gap-3">
+            <a href="" class="ahBtn fw-bolder">
+                Patient Snapshot
+            </a>
+
+            <div class="ahFilters d-flex flex-wrap align-items-center gap-3">
+                <app-input-item
+                    name="filter1"
+                    id="filter1"
+                    label="Filter One"
+                    type="select"
+                    designMode="alt"
+                    placeholder="-- Select Option --"
+                >
+                    <option>Option One</option>
+                    <option>Option One</option>
+                    <option>Option One</option>
+                </app-input-item>
+                <app-input-item
+                    name="filter2"
+                    id="filter2"
+                    label="Select Date"
+                    type="date"
+                    designMode="alt"
+                />
+            </div>
+        </div>
+
+        <div class="analyticsStats">
+            <div class="totatlAppt boxParent">
+                <div class="boxContent">
+                    <p class="boxNumber fw-black">
+                        41,233
+                    </p>
+                    <p class="boxDesc">
+                        <span class="d-block">Total</span>
+                        <span class="d-block">Appointments</span>
+                    </p>
+                </div>
+                <div class="boxBottom">
+                    <p class="boxTitle">
+                        Recently Updated
+                    </p>
+                    <button class="boxIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="activeAppt boxParent">
+                <div class="boxContent">
+                    <p class="boxNumber fw-black">
+                        40
+                    </p>
+                    <p class="boxDesc">
+                        <span class="d-block">Active</span>
+                        <span class="d-block">Appointments</span>
+                    </p>
+                </div>
+                <div class="boxBottom">
+                    <p class="boxTitle">
+                        Recently Updated
+                    </p>
+                    <button class="boxIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="completedAppt boxParent">
+                <div class="boxContent">
+                    <p class="boxNumber fw-black">
+                        593
+                    </p>
+                    <p class="boxDesc">
+                        <span class="d-block">Completed</span>
+                        <span class="d-block">Appointments</span>
+                    </p>
+                </div>
+                <div class="boxBottom">
+                    <p class="boxTitle">
+                        Recently Updated
+                    </p>
+                    <button class="boxIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="noShowsAppt boxParent">
+                <div class="boxContent">
+                    <p class="boxNumber fw-black">
+                        4
+                    </p>
+                    <p class="boxDesc">
+                        <span class="d-block">No</span>
+                        <span class="d-block">Shows</span>
+                    </p>
+                </div>
+                <div class="boxBottom">
+                    <p class="boxTitle">
+                        Recently Updated
+                    </p>
+                    <button class="boxIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="cancelledAppt boxParent">
+                <div class="boxContent">
+                    <p class="boxNumber fw-black">
+                        0
+                    </p>
+                    <p class="boxDesc">
+                        <span class="d-block">Canelled</span>
+                        <span class="d-block">Appointments</span>
+                    </p>
+                </div>
+                <div class="boxBottom">
+                    <p class="boxTitle">
+                        Recently Updated
+                    </p>
+                    <button class="boxIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="analyticsChart">
+            <div class="acHeading">
+                <h3 class="achNumber fw-bolder">
+                    593
+                </h3>
+                <div class="achContent d-flex flex-wrap align-items-center justify-content-between gap-4">
+                    <p class="achText">
+                        Activity Rate Appointment
+                    </p>
+                    <div class="achUpdated d-flex align-items-center gap-3">
+                        <p class="achUpdatedText">
+                            Recently Updated
+                        </p>
+                        <button class="achUpdatedIcon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="currentColor">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.8 4.2C9.8 4.585 10.115 4.9 10.5 4.9H13.3C13.685 4.9 14 4.585 14 4.2V1.4C14 1.015 13.685 0.7 13.3 0.7C12.915 0.7 12.6 1.015 12.6 1.4V2.835C11.326 1.12 9.303 0 7 0C3.136 0 0 3.136 0 7C0 10.864 3.136 14 7 14C10.864 14 14 10.864 14 7C14 6.615 13.685 6.3 13.3 6.3C12.915 6.3 12.6 6.615 12.6 7C12.6 10.094 10.094 12.6 7 12.6C3.906 12.6 1.4 10.094 1.4 7C1.4 3.906 3.906 1.4 7 1.4C8.771 1.4 10.339 2.219 11.368 3.5H10.5C10.115 3.5 9.8 3.815 9.8 4.2Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="achGraph">
+                <app-line-chart />
+                
+                <!-- <div class="mt-5 pt-5">
+                    <app-bar-chart />
+                </div> -->
+            </div>
+        </div>
+
+        <div class="analyticsData">
+            <div class="adSection">
+                <p class="adTitle fw-black">
+                    Top Reasons
+                </p>
+                <div class="adTableParent">
+                    <table class="adTable">
+                        <tr>
+                            <th>
+                                Reason for visit
+                            </th>
+                            <th>
+                                Count
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                General Medicine 
+                            </td>
+                            <td>
+                                352
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cold
+                            </td>
+                            <td>
+                                354
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Cough
+                            </td>
+                            <td>
+                                254
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="adSection">
+                <p class="adTitle fw-black">
+                    Patient Feedback
+                </p>
+                <div class="adTableParent">
+                    <table class="adTable">
+                        <tr>
+                            <th>
+                                Time
+                            </th>
+                            <th>
+                                Feedback
+                            </th>
+                            <th>
+                                Comment
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023.12.31
+                            </td>
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Very Nice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023.12.31
+                            </td>
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Very Nice
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2023.12.31
+                            </td>
+                            <td>
+                                Good
+                            </td>
+                            <td>
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </app-dashboard-content-wrapper>
+</section>
