@@ -33,6 +33,17 @@ import { LanguagePreferenceComponent } from './pages/language-preference/languag
 import { LineChartComponent } from './components/chart/line-chart/line-chart.component';
 import { BarChartComponent } from './components/chart/bar-chart/bar-chart.component';
 import { MiniChartComponent } from './components/chart/mini-chart/mini-chart.component';
+import { HomeHeaderComponent } from './components/home/home-header/home-header.component';
+import { HomeHeroComponent } from './components/home/home-hero/home-hero.component';
+import { HomeAboutComponent } from './components/home/home-about/home-about.component';
+import { HomeFeaturesComponent } from './components/home/home-features/home-features.component';
+import { HomeFeedbackComponent } from './components/home/home-feedback/home-feedback.component';
+import { HomeFaqComponent } from './components/home/home-faq/home-faq.component';
+import { HomeFooterComponent } from './components/home/home-footer/home-footer.component';
+import { HomeFeaturesItemComponent } from './components/home/home-features-item/home-features-item.component';
+import { HomeFaqItemComponent } from './components/home/home-faq-item/home-faq-item.component';
+import { HomeFeedbackItemComponent } from './components/home/home-feedback-item/home-feedback-item.component';
+import { PageLayoutComponent } from './layouts/page-layout/page-layout.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +76,18 @@ import { MiniChartComponent } from './components/chart/mini-chart/mini-chart.com
     LanguagePreferenceComponent,
     LineChartComponent,
     BarChartComponent,
-    MiniChartComponent
+    MiniChartComponent,
+    HomeHeaderComponent,
+    HomeHeroComponent,
+    HomeAboutComponent,
+    HomeFeaturesComponent,
+    HomeFeedbackComponent,
+    HomeFaqComponent,
+    HomeFooterComponent,
+    HomeFeaturesItemComponent,
+    HomeFaqItemComponent,
+    HomeFeedbackItemComponent,
+    PageLayoutComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,10 +15,20 @@ import { AppointmentSnapshotComponent } from './pages/appointment-snapshot/appoi
 import { AnalyticsComponent } from './pages/analytics/analytics.component';
 import { AdminProfileComponent } from './pages/admin-profile/admin-profile.component';
 import { LanguagePreferenceComponent } from './pages/language-preference/language-preference.component';
+import { PageLayoutComponent } from './layouts/page-layout/page-layout.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { 
+    path: '',
+    component: PageLayoutComponent,
+    children: [
+      {
+        path: '',
+        component: HomeComponent,
+      }
+    ]
+  },
   {
     path: '',
     component: MainLayoutComponent,
