@@ -1,1 +1,15 @@
-<p>home-faq-item works!</p>
+<div class="faqItem" [ngClass]="{ 'active': isShowAnswer }">
+    <div (click)="toggleAnswer()"  class="faqHeading d-flex align-items-center justify-content-between gap-4">
+        <p class="faqQuestion">
+            {{ question }}
+        </p>
+        <span class="faqIcon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 19 12" stroke="currentColor" fill="none">
+                <path d="M17.7363 1.5L9.73633 10.5L1.73633 1.5" stroke-width="2.02041" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+    </div>
+    <div class="faqAnswer">
+        {{ answer }}
+    </div>
+</div>

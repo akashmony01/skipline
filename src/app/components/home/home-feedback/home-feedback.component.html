@@ -2,15 +2,32 @@
     <div class="container">
         <article class="sectionContent">
             <p class="sectionSubtitle">
-                Adventures Use Skipline!
+                Skipline Users!
             </p>
             <h1 class="sectionHeading">
-                Features <span class="sectionHeadingAccent">For You!</span>
+                <span class="sectionHeadingAccent">Why They Love</span> Skipline!
             </h1>
         </article>
-        <div class="feedbackGrid">
+
+        <!-- carousel for desktop -->
+
+        <div class="feedbackGrid d-none d-md-grid">
             <app-home-feedback-item
                 imgUrl="assets/images/feed1.png"
+                title="Module"
+                clientName="Dr. Thompson"
+                clientPost="Owner of 'Thompson Medical'"
+                feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+            />
+            <app-home-feedback-item
+                imgUrl="assets/images/feed2.png"
+                title="Module"
+                clientName="Dr. Thompson"
+                clientPost="Owner of 'Thompson Medical'"
+                feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+            />
+            <app-home-feedback-item
+                imgUrl="assets/images/feed3.png"
                 title="Module"
                 clientName="Dr. Thompson"
                 clientPost="Owner of 'Thompson Medical'"
@@ -23,20 +40,51 @@
                 clientPost="Owner of 'Thompson Medical'"
                 feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
             />
-            <app-home-feedback-item
-                imgUrl="assets/images/feed1.png"
-                title="Module"
-                clientName="Dr. Thompson"
-                clientPost="Owner of 'Thompson Medical'"
-                feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
-            />
-            <app-home-feedback-item
-                imgUrl="assets/images/feed1.png"
-                title="Module"
-                clientName="Dr. Thompson"
-                clientPost="Owner of 'Thompson Medical'"
-                feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
-            />
+        </div>
+
+        <!-- carousel for mobile -->
+
+        <div id="feedbaackCarousel" class="feedbackGrid splide d-block d-md-none">
+            <div class="splide__track">
+                <ul class="splide__list">
+                <li class="splide__slide">    
+                    <app-home-feedback-item
+                            imgUrl="assets/images/feed1.png"
+                            title="Module"
+                            clientName="Dr. Thompson"
+                            clientPost="Owner of 'Thompson Medical'"
+                            feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <app-home-feedback-item
+                            imgUrl="assets/images/feed2.png"
+                            title="Module"
+                            clientName="Dr. Thompson"
+                            clientPost="Owner of 'Thompson Medical'"
+                            feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <app-home-feedback-item
+                            imgUrl="assets/images/feed3.png"
+                            title="Module"
+                            clientName="Dr. Thompson"
+                            clientPost="Owner of 'Thompson Medical'"
+                            feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+                        />
+                    </li>
+                    <li class="splide__slide">
+                        <app-home-feedback-item
+                            imgUrl="assets/images/feed1.png"
+                            title="Module"
+                            clientName="Dr. Thompson"
+                            clientPost="Owner of 'Thompson Medical'"
+                            feedback="Skipline has completely revamped our appointment scheduling system. It minimizes errors with online appointment confirmations and  available slots and book appointments with their preferred mechanics. "
+                        />
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

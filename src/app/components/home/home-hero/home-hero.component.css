@@ -153,22 +153,28 @@
     }
     .sectionContent {
         width: 100%;
-        padding-left: 25px;
-        padding-right: 25px;
     }
     .sectionSubtitle {
         font-size: 15px;
         margin-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .sectionHeading {
         font-size: 27px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .sectionSubheading {
         font-size: 15px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .sectionDesc {
         font-size: 15px;
         margin-top: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
     }
     .sectionBtns {
         justify-content: center;

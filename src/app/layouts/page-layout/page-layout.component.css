@@ -1,4 +1,4 @@
 .pageLayoutWrapper {
     min-height: 100vh;
-    background-color: #FBF9FF;
+    background-color: var(--bg-light);
 }

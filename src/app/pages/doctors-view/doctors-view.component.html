@@ -41,21 +41,44 @@
             </div>
         </div>
 
+        <div id="splide" class="splide">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">Slide 1</li>
+                <li class="splide__slide">Slide 2</li>
+                <li class="splide__slide">Slide 3</li>
+              </ul>
+            </div>
+        </div>
+
         <div class="activePatient">
             <h2 class="activePatientTitle fw-medium">
                 Active Patients
             </h2>
-            <div class="activePatientList">
-                <app-appointment-item
-                    name="Hasehma Ali"
-                    gender="Female"
-                    reason="This is her reason"
-                    department="dental"
-                    apptDate="22-22-22"
-                    [isComplete]=false
-                />
-                <app-appointment-item />
-                <app-appointment-item />
+            <div id="activePatientCarousel" class="activePatientList splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <app-appointment-item
+                                name="Hasehma Ali"
+                                gender="Female"
+                                reason="This is her reason"
+                                department="dental"
+                                apptDate="22-22-22"
+                                [isComplete]=false
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
@@ -63,31 +86,47 @@
             <h2 class="completedPatientTitle fw-medium">
                 Completed
             </h2>
-            <div class="completedPatientList">
-                <app-appointment-item 
-                    name="Hasehma Ali"
-                    gender="Female"
-                    reason="This is her reason"
-                    department="dental"
-                    apptDate="22-22-22"
-                    [isComplete]=true
-                />
-                <app-appointment-item
-                    name="Hasehma Ali"
-                    gender="Male"
-                    reason="This is her reason"
-                    department="dfg"
-                    apptDate="22-22-22"
-                    [isComplete]=true
-                />
-                <app-appointment-item 
-                    name="Hasehma Ali"
-                    gender="Others"
-                    reason="This is her reason"
-                    department="sbhj"
-                    apptDate="22-354-22"
-                    [isComplete]=true
-                />
+            <div id="completedPatientCarousel" class="completedPatientList splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <app-appointment-item 
+                                name="Hasehma Ali"
+                                gender="Female"
+                                reason="This is her reason"
+                                department="dental"
+                                apptDate="22-22-22"
+                                [isComplete]=true
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item
+                                name="Hasehma Ali"
+                                gender="Male"
+                                reason="This is her reason"
+                                department="dfg"
+                                apptDate="22-22-22"
+                                [isComplete]=true
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item 
+                                name="Hasehma Ali"
+                                gender="Others"
+                                reason="This is her reason"
+                                department="sbhj"
+                                apptDate="22-354-22"
+                                [isComplete]=true
+                            />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item />
+                        </li>
+                        <li class="splide__slide">
+                            <app-appointment-item />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </app-dashboard-content-wrapper>
