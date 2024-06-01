@@ -1,1 +1,49 @@
-<p>home-features-item works!</p>
+<a *ngIf="link" [href]="link" class="hfItem">
+    <figure class="hfiImgContainer">
+        <img
+            class="hfiImg"
+            [src]="imgUrl"
+            [alt]="highlightedTitle+' '+normalTitle"
+        />
+    </figure>
+    <article class="hfiContent">
+        <h4 class="hfiTitle">
+            <span class="highlightedTitle">
+                {{highlightedTitle}}
+            </span>
+            <span class="normalTitle">
+                {{normalTitle}}
+            </span>
+        </h4>
+        <p class="hfiSubtitle">
+            {{subtitle}}
+        </p>
+        <div class="hfiDesc" [innerHTML]="desc"></div>
+    </article>
+</a>
+
+<!--  if item doesnt have link  -->
+
+<div *ngIf="!link" class="hfItem">
+    <figure class="hfiImgContainer">
+        <img
+            class="hfiImg"
+            [src]="imgUrl"
+            [alt]="highlightedTitle+' '+normalTitle"
+        />
+    </figure>
+    <article class="hfiContent">
+        <h4 class="hfiTitle">
+            <span class="highlightedTitle">
+                {{highlightedTitle}}
+            </span>
+            <span class="normalTitle">
+                {{normalTitle}}
+            </span>
+        </h4>
+        <p class="hfiSubtitle">
+            {{subtitle}}
+        </p>
+        <div class="hfiDesc" [innerHTML]="desc"></div>
+    </article>
+</div>

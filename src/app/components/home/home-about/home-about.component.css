@@ -1,0 +1,133 @@
+.aboutSec {
+    padding: 35px 0;
+}
+
+.containerInner {
+    background-color: white;
+    padding: 50px;
+    padding-bottom: 0;
+    border-radius: 25px;
+}
+
+.sectionContent {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionSubtitle {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 30px;
+}
+
+.sectionHeading {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 900;
+    color: var(--text);
+    max-width: 611px;
+}
+
+.sectionHeadingAccent {
+    color: var(--primary);
+}
+
+.sectionDesc {
+    margin-top: 30px;
+    font-size: 17px;
+    color: var(--text-light);
+    max-width: 1000px;
+}
+
+.desktopImg {
+    margin-top: 47px;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+    object-position: left center;
+}
+
+
+/* ////////////////////////// */
+
+@media (max-width: 1200px) { 
+    .containerInner {
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    .sectionSubtitle {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .sectionHeading {
+        font-size: 46px;
+    }
+    .sectionDesc {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .aboutSec {
+        padding: 25px 0;
+    }
+    .containerInner {
+        padding: 30px;
+        padding-bottom: 0;
+        border-radius: 20px;
+    }
+    .sectionSubtitle {
+        font-size: 15px;
+    }
+    .sectionHeading {
+        font-size: 36px;
+    }
+    .sectionDesc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .aboutSec {
+        padding: 20px 0;
+    }
+    .containerInner {
+        padding: 22px 0px;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        text-align: center;
+        background-color: transparent;
+        background: white;
+        background: linear-gradient(180deg, white 50%, transparent 100%);
+        box-shadow: none;
+    }
+    .sectionContent {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .sectionSubtitle {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sectionHeading {
+        font-size: 27px;
+    }
+    .sectionDesc {
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .mobileImg {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        object-position: left center;
+    } 
+}

@@ -1,1 +1,18 @@
-<p>home-feedback-item works!</p>
+<div class="hfItem">
+    <figure class="hfiImgContainer">
+        <img
+            class="hfiImg"
+            [src]="imgUrl"
+            [alt]="clientName"
+        />
+    </figure>
+    <article class="hfiContent">
+        <p class="hfiSubtitle">
+            {{clientName}}, {{clientPost}} 
+        </p>
+        <h4 class="hfiTitle">
+            {{title}}
+        </h4>
+        <div class="hfiDesc" [innerHTML]="feedback"></div>
+    </article>
+</div>

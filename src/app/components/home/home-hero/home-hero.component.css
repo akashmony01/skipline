@@ -1,0 +1,187 @@
+.heroSec {
+    padding-top: 30px;
+    padding-bottom: 35px;
+}
+
+.containerInner {
+    background-color: white;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 20px 35px 0px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+.sectionContent {
+    width: 45%;
+}
+
+
+.sectionSubtitle {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 45px;
+}
+
+.sectionHeading {
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 900;
+    color: var(--text);
+}
+
+.sectionHeadingAccent {
+    color: var(--primary);
+}
+
+.sectionSubheading {
+    font-size: 23px;
+    font-weight: 500;
+    margin-top: 20px;
+    max-width: 457px;
+}
+
+.sectionDesc {
+    margin-top: 60px;
+    font-size: 17px;
+    color: var(--text-light);
+    max-width: 536px;
+}
+
+.sectionBtns {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.sectionBtn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: var(--primary);
+}
+
+.sectionBtn.active,
+.sectionBtn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+
+/* //////////////////// */
+
+.heroImage {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+.heroImage .desktopImg {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+
+
+/* ////////////////////////// */
+
+@media (max-width: 1200px) { 
+    .containerInner {
+        padding: 40px;
+    }
+    .sectionSubtitle {
+        font-size: 17px;
+        margin-bottom: 25px;
+    }
+    .sectionHeading {
+        font-size: 46px;
+    }
+    .sectionSubheading {
+        font-size: 18px;
+    }
+    .sectionDesc {
+        margin-top: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 991px) { 
+    .heroSec {
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }    
+    .containerInner {
+        padding: 30px;
+        border-radius: 20px;
+    }
+    .sectionSubtitle {
+        font-size: 15px;
+    }
+    .sectionHeading {
+        font-size: 36px;
+    }
+    .sectionSubheading {
+        font-size: 16px;
+    }
+    .sectionDesc {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 767px) { 
+    .heroSec {
+        padding: 20px 0;
+    }    
+    .containerInner {
+        padding: 22px 0px;
+        border-radius: 15px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        text-align: center;
+        background-color: transparent;
+        background: white;
+        background: linear-gradient(180deg, white 50%, transparent 100%);
+        box-shadow: none;
+    }
+    .sectionContent {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .sectionSubtitle {
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+    .sectionHeading {
+        font-size: 27px;
+    }
+    .sectionSubheading {
+        font-size: 15px;
+    }
+    .sectionDesc {
+        font-size: 15px;
+        margin-top: 25px;
+    }
+    .sectionBtns {
+        justify-content: center;
+    }
+
+
+    .heroImage {
+        position: static;
+        margin-top: 35px;
+        width: 100%;
+    }
+    .mobileImg {
+        width: 100%;
+        height: auto;
+    }
+}
