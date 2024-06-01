@@ -54,7 +54,6 @@
     color: var(--text);
     border-radius: 13px;
     position: relative;
-    height: 155px;
     padding-bottom: 45px;
     overflow: hidden;
     border: 4px solid #FFF;
@@ -127,28 +126,6 @@
     font-size: 12px;
     text-transform: uppercase;
 }
-
-.dayItem {
-    gap: 5px;
-}
-
-.dayBar {
-    height: 50px;
-    width: 6px;
-    background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.dayBarFilled {
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: red;
-    height: 50%;
-}
-
-
 
 
 @media (max-width: 991px) {
