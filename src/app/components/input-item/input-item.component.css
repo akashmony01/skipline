@@ -9,6 +9,10 @@
     background-color: var(--bg-3);
 }
 
+.inputItem.focused.bgAlways {
+    background-color: var(--bg-2);
+}
+
 .inputItem.altDesign {
     border-radius: 30px;
     padding: 13px 25px;

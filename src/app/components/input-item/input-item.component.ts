@@ -16,6 +16,7 @@ export class InputItemComponent {
   @Input() type: string = 'text';
   @Input() designMode: string = '';
   @Input() readonly: boolean = false;
+  @Input() bgAlways: boolean = false;
 
   isFocused: boolean = false;
 
@@ -33,5 +34,9 @@ export class InputItemComponent {
 
   onBlur() {
     this.isFocused = false;
+  }
+
+  openPicker() {
+    this.inputField.nativeElement.showPicker();
   }
 }

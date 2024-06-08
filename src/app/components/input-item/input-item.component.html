@@ -1,6 +1,6 @@
 <div 
     class="inputItem d-flex align-items-center justify-content-between"
-    [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select', 'altDesign': designMode == 'alt' }" 
+    [ngClass]="{ 'focused': isFocused, 'flex-wrap': type=='select', 'altDesign': designMode == 'alt', 'bgAlways': bgAlways }" 
 >
     <label (click)="focusInput()" [for]="id" class="inputLabel">
         {{ label }}
@@ -35,6 +35,7 @@
         </select>
     </div>
 
+
     <input
         *ngIf="!readonly && type != 'select'"
         #inputField 
@@ -45,5 +46,6 @@
         [value]="value"
         (focus)="onFocus()"
         (blur)="onBlur()"
+        (click)="openPicker()"
     />
 </div>

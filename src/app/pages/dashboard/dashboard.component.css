@@ -31,29 +31,6 @@
     font-weight: 700;
 }
 
-.dashboardSelect {
-    width: auto;
-    box-shadow: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    padding: 10px 15px;
-    padding-right: 35px;
-    background-color: white;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.dashboardSelect:hover{
-    opacity: 0.8;
-}
-
-.dashboardSelect:focus {
-    box-shadow: none;
-    border: none;
-}
-
-
 
 .dashboardData {
     margin-top: 20px;

@@ -5,32 +5,51 @@
         <div class="dashboardFilters d-flex align-items-center justify-content-between flex-wrap gap-3">
             <ul class="dashboardBtnList resetUl d-flex align-items-center flex-wrap">
                 <li>
-                    <a href="" class="dashboardBtnItem active">
+                    <button 
+                        class="dashboardBtnItem"
+                        [ngClass]="{ 'active': activeTab == 'new' }"
+                        (click)="toggleTab('new')" 
+                    >
                         New Patients <span class="dashboardItemNumber">31</span>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="" class="dashboardBtnItem">
+                    <button 
+                        class="dashboardBtnItem"
+                        [ngClass]="{ 'active': activeTab == 'cancelled' }"
+                        (click)="toggleTab('cancelled')" 
+                    >
                         Canceled <span class="dashboardItemNumber">11</span>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="" class="dashboardBtnItem">
+                    <button 
+                        class="dashboardBtnItem"
+                        [ngClass]="{ 'active': activeTab == 'completed' }"
+                        (click)="toggleTab('completed')" 
+                    >
                         Completed <span class="dashboardItemNumber">54</span>
-                    </a>
+                    </button>
                 </li>
                 <li>
-                    <a href="" class="dashboardBtnItem">
+                    <button 
+                        class="dashboardBtnItem"
+                        [ngClass]="{ 'active': activeTab == 'now-show' }"
+                        (click)="toggleTab('now-show')" 
+                    >
                         No-Show <span class="dashboardItemNumber">1</span>
-                    </a>
+                    </button>
                 </li>
             </ul>
-            <select class="dashboardSelect form-select">
-                <option selected>Select Date 2023.11.12</option>
-                <option value="1">2023.11.12</option>
-                <option value="2">2023.11.12</option>
-                <option value="3">2023.11.12</option>
-            </select>
+            <app-input-item 
+                label="Date of Birth"
+                placeholder="2023.12.31"
+                type="date"
+                name="date"
+                id="date"
+                designMode="alt"
+                [bgAlways]=true
+            />
         </div>
         <div class="dashboardData position-relative overflow-hidden">
             <app-background-image />
