@@ -12,6 +12,15 @@ export class DashboardHeaderComponent {
     url: 'assets/images/dashboard-header-bg.svg',
     alt: 'Header Image'
   }
+  cmImg: ImageObject = {
+    url: 'assets/images/cm.png',
+    alt: 'chief minister'
+  }
+  hmImg: ImageObject = {
+    url: 'assets/images/hm.png',
+    alt: 'health minister'
+  };
+  
 
   searchKey: String = '';
 

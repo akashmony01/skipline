@@ -81,15 +81,22 @@
     right: 0;
     bottom: 0;
     width: 50%;
+    margin-bottom: 0;
 }
 
-.heroImage .desktopImg {
+.heroImage .heroCarousel,
+.heroImage .heroCarousel .splide__track,
+.heroImage .heroCarousel .splide__track .splide__list,
+.heroImage .heroCarousel .splide__track .splide__list .splide__slide{
+    height: 100%;
+}
+
+.heroImage .heroCarouselDesktop .splide__track .splide__list .splide__slide .desktopImg {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    object-position: left center;
+    object-position: center;
 }
-
 
 /* ////////////////////////// */
 
@@ -189,5 +196,17 @@
     .mobileImg {
         width: 100%;
         height: auto;
+    }
+    .heroImage .heroCarouselMobile .splide__track .splide__list .splide__slide .mobileImg {
+        height: 450px;
+        width: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .heroImage .heroCarouselMobile .splide__track .splide__list .splide__slide .mobileImg {
+        height: 350px;
     }
 }

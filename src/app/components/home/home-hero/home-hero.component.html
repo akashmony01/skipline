@@ -19,11 +19,40 @@
                 </div>
 
                 <figure class="heroImage d-block d-md-none">
-                    <img
-                        class="mobileImg"
-                        [src]="mobileHeroImg.url"
-                        [alt]="mobileHeroImg.alt"
-                    />
+                    <div class="heroCarouselMobile heroCarousel splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <img
+                                        class="mobileImg"
+                                        [src]="cmImg.url" 
+                                        [alt]="cmImg.alt"
+                                    >
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="mobileImg"
+                                        [src]="hmImg.url" 
+                                        [alt]="hmImg.alt"
+                                    >
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="mobileImg"
+                                        [src]="hmImg.url" 
+                                        [alt]="hmImg.alt"
+                                    >
+                                </li>
+                                <li class="splide__slide">
+                                    <img
+                                        class="mobileImg"
+                                        [src]="hmImg.url" 
+                                        [alt]="hmImg.alt"
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </figure>
 
                 <div class="sectionBtns">
@@ -55,11 +84,26 @@
                 </div>
             </article>
             <figure class="heroImage d-none d-md-block">
-                <img
-                    class="desktopImg"
-                    [src]="desktopHeroImg.url"
-                    [alt]="desktopHeroImg.alt"
-                />
+                <div class="heroCarouselDesktop heroCarousel splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    class="desktopImg"
+                                    [src]="cmImg.url" 
+                                    [alt]="cmImg.alt"
+                                >
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    class="desktopImg"
+                                    [src]="hmImg.url" 
+                                    [alt]="hmImg.alt"
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </figure>
         </div>
     </div>

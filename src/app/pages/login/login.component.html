@@ -2,13 +2,26 @@
     <div id="loginContainer" class="loginContainer position-relative d-flex flex-column-reverse flex-lg-row align-items-center min-vh-100">
         <article id="loginLeft" class="loginLeft">
             <div class="loginContent text-center">
-                <a routerLink="" class="d-none d-lg-inline-block">
-                    <img
-                        class="loginLogoImg img-fluid"
-                        [src]="logoImg.url" 
-                        [alt]="logoImg.alt"
-                    >
-                </a>
+                <div class="loginCarouselDesktop splide d-none d-lg-inline-block">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    class="loginLogoImg img-fluid"
+                                    [src]="cmImg.url" 
+                                    [alt]="cmImg.alt"
+                                >
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    class="loginLogoImg img-fluid"
+                                    [src]="hmImg.url" 
+                                    [alt]="hmImg.alt"
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <div class="loginText">
                     <h1 class="loginTitle fw-black">
                         {{ title }}
@@ -56,13 +69,28 @@
         <figure class="loginRight">
             <div [ngStyle]="{'height.px': dynamicImgHeight}" class="position-relative">
                 <span class="d-inline-block d-lg-none position-absolute start-0 top-0 bottom-0 end-0 bg-black opacity-50"></span>
-                <a routerLink="" class="loginLogoMobile d-inline-block d-lg-none">
-                    <img
-                        class="loginLogoImgMobile img-fluid"
-                        [src]="logoImg_white.url" 
-                        [alt]="logoImg_white.alt"
-                    >
-                </a>
+
+                <div class="loginLogoMobile loginCarouselMobile d-inline-block d-lg-none splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img
+                                    class="loginLogoImgMobile"
+                                    [src]="cmImg.url" 
+                                    [alt]="cmImg.alt"
+                                >
+                            </li>
+                            <li class="splide__slide">
+                                <img
+                                    class="loginLogoImgMobile"
+                                    [src]="hmImg.url" 
+                                    [alt]="hmImg.alt"
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
                 <img 
                     class="loginImg rounded-4 w-100 h-100" 
                     [src]="bannerImg.url" 

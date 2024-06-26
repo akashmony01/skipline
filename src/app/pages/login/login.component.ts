@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { ImageObject } from 'src/app/models/app.models';
+import Splide from '@splidejs/splide';
 
 @Component({
   selector: 'app-login',
@@ -14,7 +15,6 @@ export class LoginComponent {
 
   title: string = 'Welcome Back Skipline!'
   description: string = 'Skipline the best platform for manage your hospital & patient in any hospital'
-  
   logoImg: ImageObject = {
     url: 'assets/images/logo.svg',
     alt: 'Logo Image'
@@ -23,6 +23,14 @@ export class LoginComponent {
     url: 'assets/images/logo-white.svg',
     alt: 'Logo Image'
   }
+  cmImg: ImageObject = {
+    url: 'assets/images/cm.png',
+    alt: 'chief minister'
+  }
+  hmImg: ImageObject = {
+    url: 'assets/images/hm.png',
+    alt: 'health minister'
+  };
   bannerImg: ImageObject = {
     url: 'assets/images/login_img.png',
     alt: 'Login screen img'
@@ -55,6 +63,27 @@ export class LoginComponent {
       }
 
     }
+  }
+
+  ngAfterViewInit(): void {
+    new Splide('.loginCarouselDesktop', {
+      perMove: 1,
+      type: 'fade',
+      rewind: true,
+      pagination: false,
+      perPage: 1,
+      arrows: false,
+      autoplay: true,
+    }).mount();
+    new Splide('.loginCarouselMobile', {
+      perMove: 1,
+      type: 'fade',
+      rewind: true,
+      pagination: false,
+      perPage: 1,
+      arrows: false,
+      autoplay: true,
+    }).mount();
   }
 
 }
